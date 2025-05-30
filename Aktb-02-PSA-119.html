@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+
+<meta property="og:title" content="Taurat Zabór Énjel Baso Plembang">
+<meta property="og:description" content="Kitab Suci Taurat Zabór Énjél dalem baso Plembang">
+<link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+
+<meta property="og:title" content="Taurat Zabór Énjel Baso Plembang">
+<meta property="og:description" content="Kitab Suci Taurat Zabór Énjél dalem baso Plembang">
+<link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
+
+<meta property="og:title" content="Taurat Zabór Énjel Baso Plembang">
+<meta property="og:description" content="Kitab Suci Taurat Zabór Énjél dalem baso Plembang">
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+<meta property="og:title" content="Alkitab Tejemahan Palembang">
+<meta property="og:description" content="Terjemahan Alkitab dalem baso Palembang.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#006600">
+<title>Zabór 119</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">119:32 </span><span class=\"fq\">ngeluaske pemahaman: </span><span class=\"ft\">Tólésan aslinyo iola “ngeluaske ati”. Dalem budayo asli, ati iola tempat pemékéran manusio.</span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"fr\">119:38 </span><span class=\"fq\">iola janji yang békén wong tóndók dengen takjób samo Kau: </span><span class=\"ft\">Tólésan asli dalem baso Ibrani pacak jugo diartike “iola janji óntók wong yang tóndók dengen takjób samo Kau”.</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">119:70 </span><span class=\"fq\">Palak dio wong keras pecak batu: </span><span class=\"ft\">Tólésan aslinyo iola, “ati dio wong tebel pecak lemak”. Makno kiasan ni kurang jelas, tapi sala sikok kemóngkénannyo iola óntók ngambarke wong yang keras kepalak yang saro nerimo ajaran.</span></div>",
+    "F-3": "<div class=\"footnote-p\"><span class=\"fr\">119:78 </span><span class=\"fq\">dengen kebohongan: </span><span class=\"ft\">Tólésan aslinyo pacak jugo diartike, “dengen katek alesan”.</span></div>",
+    "F-4": "<div class=\"footnote-p\"><span class=\"fr\">119:86 </span><span class=\"fq\">dengen kebohongan: </span><span class=\"ft\">Tólésan aslinyo pacak jugo diartike, “dengen katek alesan”.</span></div>",
+    "F-5": "<div class=\"footnote-p\"><span class=\"fr\">119:91 </span><span class=\"fq\">Ole kepótósan Kau, slórónyo tetep ado sampe mak ini ari: </span><span class=\"ft\">Ado jugo yang napsérke kato-kato asli dalem baso Ibrani di sini cak ini, “Kepótósan-kepótósan Kau tetep ado sampe mak ini ari”.</span></div>",
+    "F-6": "<div class=\"footnote-p\"><span class=\"fr\">119:103 </span><span class=\"fq\">Alangke lemaknyo janji-janji Kau di kópéng aku: </span><span class=\"ft\">Tólésan aslinyo iola, “Alangke lembótnyo janji-janji Kau óntók langét-langét mólót aku”. Ini ni kiasan dari lemaknyo janji-janji Allah óntók penyaér.</span></div>",
+    "F-7": "<div class=\"footnote-p\"><span class=\"fr\">119:118 </span><span class=\"fq\">kelakuan calak dio wong iola pelanggaran: </span><span class=\"ft\">Tólésan aslinyo pacak jugo diartike, “kelakuan calak dio wong sesat” apo dak tu “kelakuan calak dio wong sio-sio”. Tapi amen kito peratike siso saérnyo, pecaknyo arti “kelakuan calak dio wong iola pelanggaran” yang paléng pas.</span></div>",
+    "F-8": "<div class=\"footnote-p\"><span class=\"fr\">119:128 </span><span class=\"fq\">slóró petónjók Kau aku pandang bener: </span><span class=\"ft\">Tólésan aslinyo pacak jugo diartike, “aku édóp sesuai dengen slóró petónjók Kau”.</span></div>",
+    "F-9": "<div class=\"footnote-p\"><span class=\"fr\">119:130 </span><span class=\"fq\">Pirman Kau iola lawang tebukak yang ngenjók cahayo: </span><span class=\"ft\">Tólésan aslinyo seréng jugo diartike, “Pirman Kau yang tesingkap nerangi”.</span></div>",
+    "F-10": "<div class=\"footnote-p\"><span class=\"fr\">119:158 </span><span class=\"fq\">idak nóróti omongan Kau: </span><span class=\"ft\">Tólésan asli dalem baso Ibrani pacak jugo diartike “idak megang tegó janji Kau”.</span></div>"
+};
+
+initFootnotes(footnotes);
+
+var crossrefs = {
+    "X-0": "<div class=\"footnote-p\"><span class=\"xo\">119:1-176 </span><span class=\"xta\">Kitab</span><span class=\"xt\"> </span><span class=\"xt\">Ulangan 30:11-16</span><span class=\"xta\">jugo nyelaske pasal ajaran Allah tu ngenjók édóp óntók wong yang nórótinyo.</span></div>"
+};
+
+initFootnotes(crossrefs);
+
+
+// Glossary entries
+var glossary = {
+    "G-67": "<div><span class=\"k\">Alef - 119:1-176</span> -  Di tólésan aslinyo, saér ni disósón dalem 22 baét nórót abjad baso Ibrani yang órópnyo bejumla 22. Di baét petamo, tiap ayat dimulai dengen óróp petamo dari abjad baso Ibrani tu, iola <span class=\"it\">alef</span>. Di baét keduo, tiap ayat dimulai dengen óróp keduo, iola <span class=\"it\">bet</span>. Cak itula seterósnyo sampe ahér. Kesannyo, saér ni jadi perenóngan yang lengkap, dari <span class=\"it\">a</span> sampe <span class=\"it\">z</span>.</div>",
+    "G-2": "<div><span class=\"k\">ALLAH</span> - Setiap kali tejingok kato ni (óróp besak galo), artinyo yang tetólés di teks aslinyo bukan kato Allah, tapi namo YHWH. Mangko, kato ALLAH yang ditólés makek óróp besak galo idak samo dengen kato Allah yang ditólés makek óróp besak di awal bae. YHWH tu iola namonyo Allah yang diwahyuke-Nyo ke Nabi Musa di Gónóng Horeb (Pembebasan 3:15). Namo YHWH tu móngkén diucapke “Yahwe” trós artinyo ‘Yang Kekal’. Tapi ado tradisi lamo yang dak nyebótke namo YHWH soalnyo takót dianggep ngotori namo tu. Jadi banyak wong makek kato pengganti, contonyo <span class=\"it\">Allah</span> apo <span class=\"it\">Tuhan</span>.</div>"
+};
+
+initFootnotes(glossary);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 2 }, { start: 8, end: 8 }, { start: 15, end: 16 }, { start: 19, end: 19 }, { start: 22, end: 24 }, { start: 34, end: 34 }, { start: 36, end: 37 }, { start: 40, end: 40 }, { start: 42, end: 43 }, { start: 48, end: 51 }, { start: 70, end: 70 }, { start: 84, end: 84 }, { start: 87, end: 87 }, { start: 96, end: 96 }, { start: 98, end: 98 }, { start: 108, end: 108 }, { start: 104, end: 104 }, { start: 110, end: 110 }, { start: 112, end: 112 }, { start: 119, end: 119 }, { start: 132, end: 132 }, { start: 137, end: 137 }, { start: 143, end: 143 }, { start: 148, end: 148 }];
+var hasIntro = false;
+var baseRef  = "Aktb-02-PSA-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='Aktb-01-GEN-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-02-PSA-112.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Zabór&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;119&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-02-PSA-132.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-03-GLO-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="c">119</div> 
+<div class="s2"><div id="s1">Ajaran Allah ngenjók édóp óntók wong yang nórótinyo<span class="footnote selectable" id="X-0"><sup>a</sup></span></div></div>
+<div class="b">&nbsp;</div>
+<div class="qa">א - <span class="footnote selectable" id="G-67">Alef</span></div>
+<div class="b">&nbsp;</div><a id="v1"></a>
+<div class="q-v"><span class="v">1</span><span class="vsp">&nbsp;</span>Senengla ati wong yang tólós édópnyo,</div>
+<div class="q2">yang bejalan dalem ajaran <span class="nd"><span class="footnote selectable" id="G-2">ALLAH</span></span>.<span id="bookmarks1"></span></div><span id="bookmarks1"></span><a id="v2"></a>
+<div class="q-v"><span class="v">2</span><span class="vsp">&nbsp;</span>Senengla ati wong yang menui pesyaratan-pesyaratan pejanjian-Nyo,</div>
+<div class="q2">yang nyari Dio dengen sepenu ati,<span id="bookmarks2"></span></div><span id="bookmarks2"></span><a id="v3"></a>
+<div class="q2-v"><span class="v">3</span><span class="vsp">&nbsp;</span>yang jugo idak ngelakuke kejahatan,</div>
+<div class="q2">tapi yang édóp nórót jalan Allah.<span id="bookmarks3"></span></div><span id="bookmarks3"></span><a id="v4"></a>
+<div class="q-v"><span class="v">4</span><span class="vsp">&nbsp;</span>Kau la netepke supayo petónjók-petónjók Kau</div>
+<div class="q2">dipegang nian-nian.<span id="bookmarks4"></span></div><span id="bookmarks4"></span><a id="v5"></a>
+<div class="q-v"><span class="v">5</span><span class="vsp">&nbsp;</span>Kironyo langka-langka aku ditegóke</div>
+<div class="q2">óntók nyalani peratóran-peratóran Kau!<span id="bookmarks5"></span></div><span id="bookmarks5"></span><a id="v6"></a>
+<div class="q-v"><span class="v">6</span><span class="vsp">&nbsp;</span>Mangko, mato aku idak lepas dari slóró prénto Kau,</div>
+<div class="q2">trós aku idak bakal dipermaluke.<span id="bookmarks6"></span></div><span id="bookmarks6"></span><a id="v7"></a>
+<div class="q-v"><span class="v">7</span><span class="vsp">&nbsp;</span>Aku bakal ngucap sókór samo Kau dengen ati yang tólós</div>
+<div class="q2">pas aku belajar pasal kepótósan-kepótósan Kau yang adél.<span id="bookmarks7"></span></div><span id="bookmarks7"></span><a id="v8"></a>
+<div class="q-v"><span class="v">8</span><span class="vsp">&nbsp;</span>Aku bakal megang peratóran-peratóran Kau.</div>
+<div class="q">Jangan perna tinggalke aku!</div>
+<div class="b">&nbsp;</div>
+<div class="qa">ב - Bet</div>
+<div class="b">&nbsp;</div><span id="bookmarks8"></span><span id="bookmarks8"></span><a id="v9"></a>
+<div class="q-v"><span class="v">9</span><span class="vsp">&nbsp;</span>Cakmano caro wong mudo pacak miaro kesucian édópnyo?</div>
+<div class="q2">Dengen nyago jalannyo sesuai dengen pirman Kau.<span id="bookmarks9"></span></div><span id="bookmarks9"></span><a id="v10"></a>
+<div class="q-vv"><span class="v">10</span><span class="vsp">&nbsp;</span>Dengen sepenu ati, aku nyari Kau;</div>
+<div class="q2">jangan biarke aku nyimpang dari prénto-prénto Kau.<span id="bookmarks10"></span></div><span id="bookmarks10"></span><a id="v11"></a>
+<div class="q-vv"><span class="v">11</span><span class="vsp">&nbsp;</span>Di jeró ati aku, aku nyimpen janji Kau,</div>
+<div class="q2">supayo aku idak beduso samo Kau.<span id="bookmarks11"></span></div><span id="bookmarks11"></span><a id="v12"></a>
+<div class="q-vv"><span class="v">12</span><span class="vsp">&nbsp;</span>Tepujila Kau, ya <span class="nd"><span class="footnote selectable" id="G-2">ALLAH</span></span>!</div>
+<div class="q2">Ajarila aku peratóran-peratóran Kau.<span id="bookmarks12"></span></div><span id="bookmarks12"></span><a id="v13"></a>
+<div class="q-vv"><span class="v">13</span><span class="vsp">&nbsp;</span>Dengen bébér aku, aku nyeritoke</div>
+<div class="q2">slóró peratóran dari mólót Kau.<span id="bookmarks13"></span></div><span id="bookmarks13"></span><a id="v14"></a>
+<div class="q-vv"><span class="v">14</span><span class="vsp">&nbsp;</span>Édóp sesuai pesyaratan-pesyaratan Kau iola kesenengan aku,</div>
+<div class="q2">aku nyenenginyo pecak segalo harto.<span id="bookmarks14"></span></div><span id="bookmarks14"></span><a id="v15"></a>
+<div class="q-vv"><span class="v">15</span><span class="vsp">&nbsp;</span>Aku nak ngerenóngke petónjók-petónjók Kau</div>
+<div class="q2">trós meratike jalan-jalan Kau.<span id="bookmarks15"></span></div><span id="bookmarks15"></span><a id="v16"></a>
+<div class="q-vv"><span class="v">16</span><span class="vsp">&nbsp;</span>Aku bakal beseneng karno kepótósan-kepótósan Kau;</div>
+<div class="q2">aku dak bakal ngelupoke pirman Kau.</div>
+<div class="b">&nbsp;</div>
+<div class="qa">ג - Gimel</div>
+<div class="b">&nbsp;</div><span id="bookmarks16"></span><span id="bookmarks16"></span><a id="v17"></a>
+<div class="q-vv"><span class="v">17</span><span class="vsp">&nbsp;</span><span class="add">Ya Allah</span> bebuat baékla samo hamba Kau ni</div>
+<div class="q2">supayo aku pacak édóp trós megang tegó pirman Kau.<span id="bookmarks17"></span></div><span id="bookmarks17"></span><a id="v18"></a>
+<div class="q-vv"><span class="v">18</span><span class="vsp">&nbsp;</span>Bukakkela mato aku supayo aku pacak nyingok</div>
+<div class="q2">keajaéban-keajaéban dalem ajaran Kau.<span id="bookmarks18"></span></div><span id="bookmarks18"></span><a id="v19"></a>
+<div class="q-vv"><span class="v">19</span><span class="vsp">&nbsp;</span>Aku ni pendateng di tana ni;</div>
+<div class="q2">jangan nyingitke prénto-prénto Kau dari aku.<span id="bookmarks19"></span></div><span id="bookmarks19"></span><a id="v20"></a>
+<div class="q-vv"><span class="v">20</span><span class="vsp">&nbsp;</span>Jiwo aku ancór karno kangen</div>
+<div class="q2">samo peratóran-peratóran Kau tiap waktu.<span id="bookmarks20"></span></div><span id="bookmarks20"></span><a id="v21"></a>
+<div class="q-vv"><span class="v">21</span><span class="vsp">&nbsp;</span>Kau nyegak wong-wong sombong, iola wong-wong yang tekótók,</div>
+<div class="q2">yang nyimpang dari prénto-prénto Kau.<span id="bookmarks21"></span></div><span id="bookmarks21"></span><a id="v22"></a>
+<div class="q-vv"><span class="v">22</span><span class="vsp">&nbsp;</span><span class="add">Jadi</span>, séngkérkela dari aku katoan jugo hinoan,</div>
+<div class="q2">soalnyo aku nóróti pesyaratan-pesyaratan Kau.<span id="bookmarks22"></span></div><span id="bookmarks22"></span><a id="v23"></a>
+<div class="q-vv"><span class="v">23</span><span class="vsp">&nbsp;</span>Mugola wong-wong besak dódók beróndéng óntók ngelawan aku,</div>
+<div class="q2">hamba Kau ni bakal ngerenóngke peratóran-peratóran Kau.<span id="bookmarks23"></span></div><span id="bookmarks23"></span><a id="v24"></a>
+<div class="q-vv"><span class="v">24</span><span class="vsp">&nbsp;</span>Iyo, pejanjian Kau jadi kesenengan aku</div>
+<div class="q2">jugo jadi penasehat aku.</div>
+<div class="b">&nbsp;</div>
+<div class="qa">ד - Dalet</div>
+<div class="b">&nbsp;</div><span id="bookmarks24"></span><span id="bookmarks24"></span><a id="v25"></a>
+<div class="q-vv"><span class="v">25</span><span class="vsp">&nbsp;</span>Nyawo aku <span class="add">ampér mati,</span> tekapar ke debu tana;</div>
+<div class="q2">édópkela aku sesuai dengen pirman Kau.<span id="bookmarks25"></span></div><span id="bookmarks25"></span><a id="v26"></a>
+<div class="q-vv"><span class="v">26</span><span class="vsp">&nbsp;</span>Aku la nyeritoke jalan-jalan édóp aku, laju Kau nyawab aku.</div>
+<div class="q"><span class="add">Sekarang</span>, ajarila aku peratóran-peratóran Kau.<span id="bookmarks26"></span></div><span id="bookmarks26"></span><a id="v27"></a>
+<div class="q-vv"><span class="v">27</span><span class="vsp">&nbsp;</span>Enjókla aku pengertian pasal jalan yang sesuai petónjók-petónjók Kau,</div>
+<div class="q2">supayo aku pacak ngerenóngke keajaéban Kau.<span id="bookmarks27"></span></div><span id="bookmarks27"></span><a id="v28"></a>
+<div class="q-vv"><span class="v">28</span><span class="vsp">&nbsp;</span>Jiwo aku nangis ole kesaroan;</div>
+<div class="q2">tegakkela aku sesuai dengen pirman Kau.<span id="bookmarks28"></span></div><span id="bookmarks28"></span><a id="v29"></a>
+<div class="q-vv"><span class="v">29</span><span class="vsp">&nbsp;</span>Jaókela jalan kesesatan dari aku,</div>
+<div class="q2">trós karuniokela ajaran Kau ke aku.<span id="bookmarks29"></span></div><span id="bookmarks29"></span><a id="v30"></a>
+<div class="q-vv"><span class="v">30</span><span class="vsp">&nbsp;</span>Aku la mélé jalan kebeneran;</div>
+<div class="q2">aku la narok peratóran-peratóran Kau di adepan aku.<span id="bookmarks30"></span></div><span id="bookmarks30"></span><a id="v31"></a>
+<div class="q-vv"><span class="v">31</span><span class="vsp">&nbsp;</span>Aku bepegang tegó samo pejanjian Kau.</div>
+<div class="q2">Ya <span class="nd">ALLAH</span>, jangan biarke aku dipermaluke.<span id="bookmarks31"></span></div><span id="bookmarks31"></span><a id="v32"></a>
+<div class="q-vv"><span class="v">32</span><span class="vsp">&nbsp;</span>Aku belari melok'i jalan prénto-prénto Kau,</div>
+<div class="q2">karno Kau ngeluaske pemahaman<span class="footnote selectable" id="F-0"><sup>*</sup></span> aku.</div>
+<div class="b">&nbsp;</div>
+<div class="qa">ה - He</div>
+<div class="b">&nbsp;</div><span id="bookmarks32"></span><span id="bookmarks32"></span><a id="v33"></a>
+<div class="q-vv"><span class="v">33</span><span class="vsp">&nbsp;</span>Ya <span class="nd">ALLAH</span>, ajarila aku jalan yang sesuai dengen peratóran-peratóran Kau,</div>
+<div class="q2">mangko aku bakal nórótinyo sampe ahér.<span id="bookmarks33"></span></div><span id="bookmarks33"></span><a id="v34"></a>
+<div class="q-vv"><span class="v">34</span><span class="vsp">&nbsp;</span>Enjókla aku pengertian, mangko aku bakal nóróti ajaran Kau</div>
+<div class="q2">trós megangnyo dengen sepenu ati.<span id="bookmarks34"></span></div><span id="bookmarks34"></span><a id="v35"></a>
+<div class="q-vv"><span class="v">35</span><span class="vsp">&nbsp;</span>Tóntónla aku dalem jalór prénto-prénto Kau</div>
+<div class="q2">karno aku nyenenginyo.<span id="bookmarks35"></span></div><span id="bookmarks35"></span><a id="v36"></a>
+<div class="q-vv"><span class="v">36</span><span class="vsp">&nbsp;</span>Arakela ati aku samo pejanjian Kau,</div>
+<div class="q2">bukan samo kekayoan.<span id="bookmarks36"></span></div><span id="bookmarks36"></span><a id="v37"></a>
+<div class="q-vv"><span class="v">37</span><span class="vsp">&nbsp;</span>Aléhkela mato aku supayo jangan nyingok'i pasal yang sio-sio.</div>
+<div class="q2">Enjókla aku édóp dalem jalan-jalan Kau!<span id="bookmarks37"></span></div><span id="bookmarks37"></span><a id="v38"></a>
+<div class="q-vv"><span class="v">38</span><span class="vsp">&nbsp;</span>Tepatila janji Kau ke hamba Kau ni,</div>
+<div class="q2">iola janji yang békén wong tóndók dengen takjób samo Kau<span class="footnote selectable" id="F-1"><sup>*</sup></span>.<span id="bookmarks38"></span></div><span id="bookmarks38"></span><a id="v39"></a>
+<div class="q-vv"><span class="v">39</span><span class="vsp">&nbsp;</span><span class="add">Iyo</span>, liwatkela dari aku hinoan yang aku takóti,</div>
+<div class="q2">soalnyo kepótósan-kepótósan Kau baék.<span id="bookmarks39"></span></div><span id="bookmarks39"></span><a id="v40"></a>
+<div class="q-vv"><span class="v">40</span><span class="vsp">&nbsp;</span>Jingokla! Aku kangen samo petónjók-petónjók Kau;</div>
+<div class="q2">enjókla aku édóp dalem kebeneran Kau.</div>
+<div class="b">&nbsp;</div>
+<div class="qa">ו - Waw</div>
+<div class="b">&nbsp;</div><span id="bookmarks40"></span><span id="bookmarks40"></span><a id="v41"></a>
+<div class="q-vv"><span class="v">41</span><span class="vsp">&nbsp;</span>Ya <span class="nd">ALLAH</span>, kironyo kasé stio Kau ndatengi aku,</div>
+<div class="q2">kironyo keselametan dari Kau dateng sesuai dengen janji Kau.<span id="bookmarks41"></span></div><span id="bookmarks41"></span><a id="v42"></a>
+<div class="q-vv"><span class="v">42</span><span class="vsp">&nbsp;</span>Mangko aku bakal punyo kato-kato óntók nyawabi wong-wong yang ngino aku,</div>
+<div class="q2">soalnyo aku pecayo samo omongan Kau.<span id="bookmarks42"></span></div><span id="bookmarks42"></span><a id="v43"></a>
+<div class="q-vv"><span class="v">43</span><span class="vsp">&nbsp;</span>Jangan perna óróngke dari mólót aku kato-kato <span class="add">pasal</span> kestioan <span class="add">Kau</span>,</div>
+<div class="q2">soalnyo kepótósan-kepótósan Kau <span class="add">yang adél</span> iola arepan aku.<span id="bookmarks43"></span></div><span id="bookmarks43"></span><a id="v44"></a>
+<div class="q-vv"><span class="v">44</span><span class="vsp">&nbsp;</span>Aku bakal bepegang terós samo ajaran Kau,</div>
+<div class="q2">óntók seterósnyo jugo selamo-lamonyo.<span id="bookmarks44"></span></div><span id="bookmarks44"></span><a id="v45"></a>
+<div class="q-vv"><span class="v">45</span><span class="vsp">&nbsp;</span>Aku bakal bejalan dalem kelegoan,</div>
+<div class="q2">karno aku melok'i petónjók-petónjók Kau.<span id="bookmarks45"></span></div><span id="bookmarks45"></span><a id="v46"></a>
+<div class="q-vv"><span class="v">46</span><span class="vsp">&nbsp;</span>Aku bakal ngomong pasal pejanjian Kau di adepan rajo-rajo,</div>
+<div class="q2">trós aku dak bakal dipermaluke.<span id="bookmarks46"></span></div><span id="bookmarks46"></span><a id="v47"></a>
+<div class="q-vv"><span class="v">47</span><span class="vsp">&nbsp;</span>Aku bakal nyenengi prénto-prénto Kau yang aku kaséhi.<span id="bookmarks47"></span></div><span id="bookmarks47"></span><a id="v48"></a>
+<div class="q-vv"><span class="v">48</span><span class="vsp">&nbsp;</span>Aku bakal ngangkat tangan aku óntók ngormati prénto-prénto Kau yang aku kaséhi tu,</div>
+<div class="q2">trós aku bakal ngerenóngke peratóran-peratóran Kau.</div>
+<div class="b">&nbsp;</div>
+<div class="qa">ז - Zain</div>
+<div class="b">&nbsp;</div><span id="bookmarks48"></span><span id="bookmarks48"></span><a id="v49"></a>
+<div class="q-vv"><span class="v">49</span><span class="vsp">&nbsp;</span>Ingetla janji yang Kau sampeke samo hamba Kau ni,</div>
+<div class="q2">iola arepan yang Kau enjók ke aku.<span id="bookmarks49"></span></div><span id="bookmarks49"></span><a id="v50"></a>
+<div class="q-vv"><span class="v">50</span><span class="vsp">&nbsp;</span>Janji Kaula yang ngenjók aku édóp;</div>
+<div class="q2">itula yang jadi penghébóran aku dalem kesaroan.<span id="bookmarks50"></span></div><span id="bookmarks50"></span><a id="v51"></a>
+<div class="q-vv"><span class="v">51</span><span class="vsp">&nbsp;</span>Aku dihino nian ole wong-wong sombong,</div>
+<div class="q2">tapi aku idak nyimpang dari ajaran Kau.<span id="bookmarks51"></span></div><span id="bookmarks51"></span><a id="v52"></a>
+<div class="q-vv"><span class="v">52</span><span class="vsp">&nbsp;</span>Aku inget peratóran-peratóran Kau, ya <span class="nd">ALLAH</span>,</div>
+<div class="q2">peratóran Kau yang ado dari jaman bingen,</div>
+<div class="q2">karno tu aku tehébór.<span id="bookmarks52"></span></div><span id="bookmarks52"></span><a id="v53"></a>
+<div class="q-vv"><span class="v">53</span><span class="vsp">&nbsp;</span>Dara aku naék lantak wong-wong jahat,</div>
+<div class="q2">iola wong-wong yang mbuang hókóm Kau.<span id="bookmarks53"></span></div><span id="bookmarks53"></span><a id="v54"></a>
+<div class="q-vv"><span class="v">54</span><span class="vsp">&nbsp;</span>Peratóran-peratóran Kau jadi nyanyian óntók aku</div>
+<div class="q2">di tempat aku netep jadi pendateng.<span id="bookmarks54"></span></div><span id="bookmarks54"></span><a id="v55"></a>
+<div class="q-vv"><span class="v">55</span><span class="vsp">&nbsp;</span>Pas dalu aku inget namo baék Kau, ya <span class="nd">ALLAH</span>,</div>
+<div class="q2">trós aku megang tegó ajaran Kau.<span id="bookmarks55"></span></div><span id="bookmarks55"></span><a id="v56"></a>
+<div class="q-vv"><span class="v">56</span><span class="vsp">&nbsp;</span>Aku la nóróti petónjók-petónjók Kau;</div>
+<div class="q2">itula yang jadi kebiasoan aku.</div>
+<div class="b">&nbsp;</div>
+<div class="qa">ח - Het</div>
+<div class="b">&nbsp;</div><span id="bookmarks56"></span><span id="bookmarks56"></span><a id="v57"></a>
+<div class="q-vv"><span class="v">57</span><span class="vsp">&nbsp;</span><span class="nd">ALLAH</span> iola harto aku;</div>
+<div class="q2">aku la bejanji óntók megang tegó pirman Kau.<span id="bookmarks57"></span></div><span id="bookmarks57"></span><a id="v58"></a>
+<div class="q-vv"><span class="v">58</span><span class="vsp">&nbsp;</span>Aku mintak kemurahan Kau dengen sepenu ati;</div>
+<div class="q2">kesianila aku sesuai dengen janji Kau.<span id="bookmarks58"></span></div><span id="bookmarks58"></span><a id="v59"></a>
+<div class="q-vv"><span class="v">59</span><span class="vsp">&nbsp;</span>Aku mékérke jalan-jalan édóp aku,</div>
+<div class="q2">trós mbalékke ara sekel aku nuju pesyaratan-pesyaratan Kau.<span id="bookmarks59"></span></div><span id="bookmarks59"></span><a id="v60"></a>
+<div class="q-vv"><span class="v">60</span><span class="vsp">&nbsp;</span>Aku begancang nóróti prénto-prénto Kau;</div>
+<div class="q2">aku idak belambat-lambat.<span id="bookmarks60"></span></div><span id="bookmarks60"></span><a id="v61"></a>
+<div class="q-vv"><span class="v">61</span><span class="vsp">&nbsp;</span>Tali-tali wong jahat ngelingkeri aku,</div>
+<div class="q2">tapi aku idak ngelupoke ajaran Kau.<span id="bookmarks61"></span></div><span id="bookmarks61"></span><a id="v62"></a>
+<div class="q-vv"><span class="v">62</span><span class="vsp">&nbsp;</span>Tenga dalu aku bangón óntók ngucap sókór samo Kau</div>
+<div class="q2">karno kepótósan-kepótósan Kau yang adél.<span id="bookmarks62"></span></div><span id="bookmarks62"></span><a id="v63"></a>
+<div class="q-vv"><span class="v">63</span><span class="vsp">&nbsp;</span>Aku ni bekawan samo slóró wong yang tóndók dengen takjób samo Kau,</div>
+<div class="q2">samo wong yang megang tegó petónjók-petónjók Kau.<span id="bookmarks63"></span></div><span id="bookmarks63"></span><a id="v64"></a>
+<div class="q-vv"><span class="v">64</span><span class="vsp">&nbsp;</span>Kasé stio Kau menui bumi, ya <span class="nd">ALLAH</span>;</div>
+<div class="q2">ajarila aku peratóran-peratóran Kau.</div>
+<div class="b">&nbsp;</div>
+<div class="qa">ט - Tet</div>
+<div class="b">&nbsp;</div><span id="bookmarks64"></span><span id="bookmarks64"></span><a id="v65"></a>
+<div class="q-vv"><span class="v">65</span><span class="vsp">&nbsp;</span>Kau la bebuat baék samo hamba Kau ni, ya <span class="nd">ALLAH</span>,</div>
+<div class="q2">sesuai dengen pirman Kau.<span id="bookmarks65"></span></div><span id="bookmarks65"></span><a id="v66"></a>
+<div class="q-vv"><span class="v">66</span><span class="vsp">&nbsp;</span>Ajarila aku hikmah jugo pengetauan yang baék</div>
+<div class="q2">karno aku pecayo samo prénto-prénto Kau.<span id="bookmarks66"></span></div><span id="bookmarks66"></span><a id="v67"></a>
+<div class="q-vv"><span class="v">67</span><span class="vsp">&nbsp;</span>Sebelóm aku tetindes, aku tesesat,</div>
+<div class="q2">tapi sekarang aku bepegang tegó samo janji Kau.<span id="bookmarks67"></span></div><span id="bookmarks67"></span><a id="v68"></a>
+<div class="q-vv"><span class="v">68</span><span class="vsp">&nbsp;</span>Kau baék jugo bebuat baék;</div>
+<div class="q2">ajarila aku peratóran-peratóran Kau.<span id="bookmarks68"></span></div><span id="bookmarks68"></span><a id="v69"></a>
+<div class="q-vv"><span class="v">69</span><span class="vsp">&nbsp;</span>Wong-wong sombong ngotori <span class="add">namo</span> aku dengen kebohongan,</div>
+<div class="q2">tapi aku, dengen sepenu ati, nóróti petónjók-petónjók Kau.<span id="bookmarks69"></span></div><span id="bookmarks69"></span><a id="v70"></a>
+<div class="q-vv"><span class="v">70</span><span class="vsp">&nbsp;</span>Palak dio wong keras pecak batu,<span class="footnote selectable" id="F-2"><sup>*</sup></span></div>
+<div class="q2">tapi aku nyenengi ajaran Kau.<span id="bookmarks70"></span></div><span id="bookmarks70"></span><a id="v71"></a>
+<div class="q-vv"><span class="v">71</span><span class="vsp">&nbsp;</span>Bagósla óntók aku amen dulu aku ditindes</div>
+<div class="q2">supayo aku pacak belajar peratóran-peratóran Kau.<span id="bookmarks71"></span></div><span id="bookmarks71"></span><a id="v72"></a>
+<div class="q-vv"><span class="v">72</span><span class="vsp">&nbsp;</span>Ajaran dari mólót Kau lebé baék óntók aku</div>
+<div class="q2">daripado ribuan kepéng emas jugo perak.</div>
+<div class="b">&nbsp;</div>
+<div class="qa">י - Yod</div>
+<div class="b">&nbsp;</div><span id="bookmarks72"></span><span id="bookmarks72"></span><a id="v73"></a>
+<div class="q-vv"><span class="v">73</span><span class="vsp">&nbsp;</span>Tangan Kau la nyadike jugo mbentók aku;</div>
+<div class="q2">enjókla aku pengertian supayo aku pacak belajar prénto-prénto Kau.<span id="bookmarks73"></span></div><span id="bookmarks73"></span><a id="v74"></a>
+<div class="q-vv"><span class="v">74</span><span class="vsp">&nbsp;</span>Wong-wong yang tóndók dengen takjób samo Kau bakal jingok aku trós jadi seneng,</div>
+<div class="q2">soalnyo samo pirman Kaula aku bearep.<span id="bookmarks74"></span></div><span id="bookmarks74"></span><a id="v75"></a>
+<div class="q-vv"><span class="v">75</span><span class="vsp">&nbsp;</span>Ya <span class="nd">ALLAH</span>, aku tau amen kepótósan-kepótósan Kau adél,</div>
+<div class="q2">jugo amen dalem kestioan Kau bae, Kau nindes aku.<span id="bookmarks75"></span></div><span id="bookmarks75"></span><a id="v76"></a>
+<div class="q-vv"><span class="v">76</span><span class="vsp">&nbsp;</span><span class="add">Sekarang</span>, biarla kasé stio Kau jadi penghébóran aku,</div>
+<div class="q2">sesuai dengen janji Kau ke hamba Kau ni.<span id="bookmarks76"></span></div><span id="bookmarks76"></span><a id="v77"></a>
+<div class="q-vv"><span class="v">77</span><span class="vsp">&nbsp;</span>Biarla belas kesian Kau datengi aku supayo aku édóp,</div>
+<div class="q2">soalnyo ajaran Kau iola kesenengan aku.<span id="bookmarks77"></span></div><span id="bookmarks77"></span><a id="v78"></a>
+<div class="q-vv"><span class="v">78</span><span class="vsp">&nbsp;</span>Biarla wong-wong sombong dipermaluke</div>
+<div class="q2">karno dengen kebohongan<span class="footnote selectable" id="F-3"><sup>*</sup></span> dio wong la jahati aku,</div>
+<div class="q2">tapi aku bakal ngerenóngke petónjók-petónjók Kau.<span id="bookmarks78"></span></div><span id="bookmarks78"></span><a id="v79"></a>
+<div class="q-vv"><span class="v">79</span><span class="vsp">&nbsp;</span>Biarla wong-wong yang tóndók dengen takjób samo Kau balék lagi ke aku,</div>
+<div class="q2">iola wong-wong yang tau pejanjian Kau.<span id="bookmarks79"></span></div><span id="bookmarks79"></span><a id="v80"></a>
+<div class="q-vv"><span class="v">80</span><span class="vsp">&nbsp;</span>Kironyo ati aku tólós dalem peratóran-peratóran Kau</div>
+<div class="q2">supayo aku idak dipermaluke.</div>
+<div class="b">&nbsp;</div>
+<div class="qa">כ - Kaf</div>
+<div class="b">&nbsp;</div><span id="bookmarks80"></span><span id="bookmarks80"></span><a id="v81"></a>
+<div class="q-vv"><span class="v">81</span><span class="vsp">&nbsp;</span>Jiwo aku abés karno ngerinduke keselametan dari Kau;</div>
+<div class="q2">aku bearep samo pirman Kau.<span id="bookmarks81"></span></div><span id="bookmarks81"></span><a id="v82"></a>
+<div class="q-vv"><span class="v">82</span><span class="vsp">&nbsp;</span>Mato aku tesayu nungguke janji Kau <span class="add">ditepati</span>,</div>
+<div class="q2">uji aku, “Kapan Kau bakal ngébór aku?”<span id="bookmarks82"></span></div><span id="bookmarks82"></span><a id="v83"></a>
+<div class="q-vv"><span class="v">83</span><span class="vsp">&nbsp;</span>Trós, mugola aku pecak kantong kólét <span class="add">yang tekuntang</span> dalem asep <span class="add">sampe tekeréng jugo rusak</span>,</div>
+<div class="q2">tapi aku idak ngelupoke peratóran-peratóran Kau.<span id="bookmarks83"></span></div><span id="bookmarks83"></span><a id="v84"></a>
+<div class="q-vv"><span class="v">84</span><span class="vsp">&nbsp;</span>Berapo lamo lagi hamba harós nunggu?</div>
+<div class="q2">Kapan Kau bakal ngakémi wong-wong yang ngejer aku?<span id="bookmarks84"></span></div><span id="bookmarks84"></span><a id="v85"></a>
+<div class="q-vv"><span class="v">85</span><span class="vsp">&nbsp;</span>Wong-wong sombong la gali lobang óntók aku,</div>
+<div class="q2">iola wong-wong yang idak nóróti hókóm Kau.<span id="bookmarks85"></span></div><span id="bookmarks85"></span><a id="v86"></a>
+<div class="q-vv"><span class="v">86</span><span class="vsp">&nbsp;</span>Slóró prénto Kau pacak dipecayo,</div>
+<div class="q2">tapi dio wong ngejer aku dengen kebohongan.<span class="footnote selectable" id="F-4"><sup>*</sup></span></div>
+<div class="q2">Tolongla aku!<span id="bookmarks86"></span></div><span id="bookmarks86"></span><a id="v87"></a>
+<div class="q-vv"><span class="v">87</span><span class="vsp">&nbsp;</span>Dio wong ampér bae ngabési aku dari bumi,</div>
+<div class="q2">tapi aku idak ninggalke petónjók-petónjók Kau.<span id="bookmarks87"></span></div><span id="bookmarks87"></span><a id="v88"></a>
+<div class="q-vv"><span class="v">88</span><span class="vsp">&nbsp;</span>Enjókla aku édóp sesuai dengen kasé stio Kau</div>
+<div class="q2">supayo aku megang tegó pejanjian dari mólót Kau.</div>
+<div class="b">&nbsp;</div>
+<div class="qa">ל - Lamed</div>
+<div class="b">&nbsp;</div><span id="bookmarks88"></span><span id="bookmarks88"></span><a id="v89"></a>
+<div class="q-vv"><span class="v">89</span><span class="vsp">&nbsp;</span>Ya <span class="nd">ALLAH</span>, sampe selamo-lamonyo</div>
+<div class="q2">pirman Kau tetep tegó di surgo.<span id="bookmarks89"></span></div><span id="bookmarks89"></span><a id="v90"></a>
+<div class="q-vv"><span class="v">90</span><span class="vsp">&nbsp;</span>Kestioan Kau dari jaman ke jaman.</div>
+<div class="q2">Kau negakke bumi laju bumi tetep ado.<span id="bookmarks90"></span></div><span id="bookmarks90"></span><a id="v91"></a>
+<div class="q-vv"><span class="v">91</span><span class="vsp">&nbsp;</span>Ole kepótósan Kau, slórónyo tetep ado sampe mak ini ari,<span class="footnote selectable" id="F-5"><sup>*</sup></span></div>
+<div class="q2">soalnyo segalonyo tu iola hamba-hamba Kau.<span id="bookmarks91"></span></div><span id="bookmarks91"></span><a id="v92"></a>
+<div class="q-vv"><span class="v">92</span><span class="vsp">&nbsp;</span>Seandainyo ajaran Kau idak jadi kesenengan aku,</div>
+<div class="q2">pastila aku la binaso dalem kesaroan aku.<span id="bookmarks92"></span></div><span id="bookmarks92"></span><a id="v93"></a>
+<div class="q-vv"><span class="v">93</span><span class="vsp">&nbsp;</span>Selamo-lamonyo aku idak bakal ngelupoke petónjók-petónjók Kau,</div>
+<div class="q2">soalnyo ole slórónyo tu Kau ngenjók aku édóp.<span id="bookmarks93"></span></div><span id="bookmarks93"></span><a id="v94"></a>
+<div class="q-vv"><span class="v">94</span><span class="vsp">&nbsp;</span>Aku ni kepunyoan Kau; selametkela aku!</div>
+<div class="q2">Soalnyo aku la melok'i petónjók-petónjók Kau.<span id="bookmarks94"></span></div><span id="bookmarks94"></span><a id="v95"></a>
+<div class="q-vv"><span class="v">95</span><span class="vsp">&nbsp;</span>Wong-wong jahat nungguke aku óntók mbinasoke aku,</div>
+<div class="q2">tapi aku bakal meratike peratóran-peratóran Kau.<span id="bookmarks95"></span></div><span id="bookmarks95"></span><a id="v96"></a>
+<div class="q-vv"><span class="v">96</span><span class="vsp">&nbsp;</span>Aku la nyingok amen galo-galonyo ado batesnyo,</div>
+<div class="q2">tapi prénto Kau luas nian, <span class="add">katek batesan</span>.</div>
+<div class="b">&nbsp;</div>
+<div class="qa">מ - Mem</div>
+<div class="b">&nbsp;</div><span id="bookmarks96"></span><span id="bookmarks96"></span><a id="v97"></a>
+<div class="q-vv"><span class="v">97</span><span class="vsp">&nbsp;</span>Alangke cintonyo aku samo ajaran Kau!</div>
+<div class="q2">Itula yang jadi renóngan aku siang malem.<span id="bookmarks97"></span></div><span id="bookmarks97"></span><a id="v98"></a>
+<div class="q-vv"><span class="v">98</span><span class="vsp">&nbsp;</span>Prénto-prénto Kau mbékén aku lebé behikmah daripado mósó-mósó aku,</div>
+<div class="q2">soalnyo slórónyo tu ado samo aku selamo-lamonyo.<span id="bookmarks98"></span></div><span id="bookmarks98"></span><a id="v99"></a>
+<div class="q-vv"><span class="v">99</span><span class="vsp">&nbsp;</span>Aku lebé bijak daripado slóró guru aku,</div>
+<div class="q2">soalnyo aku ngerenóngke pesyaratan-pesyaratan Kau.<span id="bookmarks99"></span></div><span id="bookmarks99"></span><a id="v100"></a>
+<div class="q-vv"><span class="v">100</span><span class="vsp">&nbsp;</span>Aku lebé paham daripado wong-wong yang la tuo,</div>
+<div class="q2">soalnyo aku nóróti petónjók-petónjók Kau.<span id="bookmarks100"></span></div><span id="bookmarks100"></span><a id="v101"></a>
+<div class="q-vv"><span class="v">101</span><span class="vsp">&nbsp;</span>Aku nahan sekel aku dari segalo jalan kejahatan</div>
+<div class="q2">supayo aku pacak megang tegó pirman Kau.<span id="bookmarks101"></span></div><span id="bookmarks101"></span><a id="v102"></a>
+<div class="q-vv"><span class="v">102</span><span class="vsp">&nbsp;</span>Aku idak nyimpang dari peratóran-peratóran Kau,</div>
+<div class="q2">soalnyo Kaula yang ngajar aku.<span id="bookmarks102"></span></div><span id="bookmarks102"></span><a id="v103"></a>
+<div class="q-vv"><span class="v">103</span><span class="vsp">&nbsp;</span>Alangke lemaknyo janji-janji Kau di kópéng aku,<span class="footnote selectable" id="F-6"><sup>*</sup></span></div>
+<div class="q2">lebé lemak dari madu di mólót aku.<span id="bookmarks103"></span></div><span id="bookmarks103"></span><a id="v104"></a>
+<div class="q-vv"><span class="v">104</span><span class="vsp">&nbsp;</span>Dari petónjók-petónjók Kau aku dapet pengertian;</div>
+<div class="q2">itula sebabnyo aku benci slóró jalan kesesatan.</div>
+<div class="b">&nbsp;</div>
+<div class="qa">נ - Nun</div>
+<div class="b">&nbsp;</div><span id="bookmarks104"></span><span id="bookmarks104"></span><a id="v105"></a>
+<div class="q-vv"><span class="v">105</span><span class="vsp">&nbsp;</span>Pirman Kau tu iola pelito óntók sekel aku</div>
+<div class="q2">jugo terang óntók jalan aku.<span id="bookmarks105"></span></div><span id="bookmarks105"></span><a id="v106"></a>
+<div class="q-vv"><span class="v">106</span><span class="vsp">&nbsp;</span>Aku la besumpa trós negóke diri,</div>
+<div class="q2">óntók megang tegó kepótósan-kepótósan Kau yang adél.<span id="bookmarks106"></span></div><span id="bookmarks106"></span><a id="v107"></a>
+<div class="q-vv"><span class="v">107</span><span class="vsp">&nbsp;</span>Aku mendrito nian;</div>
+<div class="q2">ya <span class="nd">ALLAH</span>, enjókla aku édóp sesuai dengen pirman Kau!<span id="bookmarks107"></span></div><span id="bookmarks107"></span><a id="v108"></a>
+<div class="q-vv"><span class="v">108</span><span class="vsp">&nbsp;</span>Terimola pesembahan <span class="add">puji-pujian</span> dari mólót aku, ya <span class="nd">ALLAH</span>,</div>
+<div class="q2">trós ajarila aku peratóran-peratóran Kau.<span id="bookmarks108"></span></div><span id="bookmarks108"></span><a id="v109"></a>
+<div class="q-vv"><span class="v">109</span><span class="vsp">&nbsp;</span>Aku terós-terósan betaró nyawo,</div>
+<div class="q2">tapi aku idak ngelupoke ajaran Kau.<span id="bookmarks109"></span></div><span id="bookmarks109"></span><a id="v110"></a>
+<div class="q-vv"><span class="v">110</span><span class="vsp">&nbsp;</span>Wong-wong jahat la masang perangkep óntók aku,</div>
+<div class="q2">tapi aku idak nyimpang dari petónjók-petónjók Kau.<span id="bookmarks110"></span></div><span id="bookmarks110"></span><a id="v111"></a>
+<div class="q-vv"><span class="v">111</span><span class="vsp">&nbsp;</span>Aku la nerimo pejanjian Kau jadi warésan aku óntók selamo-lamonyo</div>
+<div class="q2">karno pejanjian tu iola kesenengan ati aku.<span id="bookmarks111"></span></div><span id="bookmarks111"></span><a id="v112"></a>
+<div class="q-vv"><span class="v">112</span><span class="vsp">&nbsp;</span>Aku la ngarake ati aku óntók ngelakuke peratóran-peratóran Kau</div>
+<div class="q2">óntók selamo-lamonyo, sampe ahér.</div>
+<div class="b">&nbsp;</div>
+<div class="qa">ס - Samekh</div>
+<div class="b">&nbsp;</div><span id="bookmarks112"></span><span id="bookmarks112"></span><a id="v113"></a>
+<div class="q-vv"><span class="v">113</span><span class="vsp">&nbsp;</span>Aku benci wong yang nduoke ati,</div>
+<div class="q2">tapi aku cinto samo ajaran Kau.<span id="bookmarks113"></span></div><span id="bookmarks113"></span><a id="v114"></a>
+<div class="q-vv"><span class="v">114</span><span class="vsp">&nbsp;</span>Kaula tempat peléndóngan jugo tameng aku;</div>
+<div class="q2">aku bearep samo pirman Kau.<span id="bookmarks114"></span></div><span id="bookmarks114"></span><a id="v115"></a>
+<div class="q-vv"><span class="v">115</span><span class="vsp">&nbsp;</span>Pegila dari aku, ói wong-wong yang bebuat jahat,</div>
+<div class="q2">supayo aku pacak nóróti prénto-prénto Tuhanku!<span id="bookmarks115"></span></div><span id="bookmarks115"></span><a id="v116"></a>
+<div class="q-vv"><span class="v">116</span><span class="vsp">&nbsp;</span>Topangla aku, <span class="add">ya Allah</span>, sesuai dengen janji Kau supayo aku édóp.</div>
+<div class="q2">Jangan permaluke aku dalem pengarepan aku.<span id="bookmarks116"></span></div><span id="bookmarks116"></span><a id="v117"></a>
+<div class="q-vv"><span class="v">117</span><span class="vsp">&nbsp;</span>Topangla aku, supayo aku diselametke</div>
+<div class="q2">trós pacak meratike hókóm-hókóm Kau terós.<span id="bookmarks117"></span></div><span id="bookmarks117"></span><a id="v118"></a>
+<div class="q-vv"><span class="v">118</span><span class="vsp">&nbsp;</span>Kau nolak slóró wong yang nyimpang dari hókóm-hókóm Kau,</div>
+<div class="q2">karno kelakuan calak dio wong iola pelanggaran.<span class="footnote selectable" id="F-7"><sup>*</sup></span><span id="bookmarks118"></span></div><span id="bookmarks118"></span><a id="v119"></a>
+<div class="q-vv"><span class="v">119</span><span class="vsp">&nbsp;</span>Pecak kotoran yang ado di perak, Kau buang wong jahat yang ado di bumi.</div>
+<div class="q2">Karno itula aku cinto samo peratóran-peratóran Kau.<span id="bookmarks119"></span></div><span id="bookmarks119"></span><a id="v120"></a>
+<div class="q-vv"><span class="v">120</span><span class="vsp">&nbsp;</span>Badan aku meréndéng karno takjób samo Kau,</div>
+<div class="q2">trós aku tóndók karno kepótósan Kau.</div>
+<div class="b">&nbsp;</div>
+<div class="qa">ע - Ain</div>
+<div class="b">&nbsp;</div><span id="bookmarks120"></span><span id="bookmarks120"></span><a id="v121"></a>
+<div class="q-vv"><span class="v">121</span><span class="vsp">&nbsp;</span>Aku la ngelakuke keadélan jugo kebeneran;</div>
+<div class="q2">janganla nyerake aku ke wong-wong yang nindes aku.<span id="bookmarks121"></span></div><span id="bookmarks121"></span><a id="v122"></a>
+<div class="q-vv"><span class="v">122</span><span class="vsp">&nbsp;</span>Jadila jaminan hamba Kau ni óntók kebaék'an;</div>
+<div class="q2">jangan biarke wong sombong nindes aku.<span id="bookmarks122"></span></div><span id="bookmarks122"></span><a id="v123"></a>
+<div class="q-vv"><span class="v">123</span><span class="vsp">&nbsp;</span>Mato aku tesayu nungguke keselametan dari Kau</div>
+<div class="q2">jugo nungguke janji Kau yang bener tu <span class="add">ditepati</span>.<span id="bookmarks123"></span></div><span id="bookmarks123"></span><a id="v124"></a>
+<div class="q-vv"><span class="v">124</span><span class="vsp">&nbsp;</span>Lakukela ke hamba Kau sesuai dengen kasé stio Kau,</div>
+<div class="q2">trós ajarila aku peratóran-peratóran Kau.<span id="bookmarks124"></span></div><span id="bookmarks124"></span><a id="v125"></a>
+<div class="q-vv"><span class="v">125</span><span class="vsp">&nbsp;</span>Aku ni hamba Kau; enjókla aku pengertian</div>
+<div class="q2">supayo aku pacak tau pejanjian Kau.<span id="bookmarks125"></span></div><span id="bookmarks125"></span><a id="v126"></a>
+<div class="q-vv"><span class="v">126</span><span class="vsp">&nbsp;</span>La sampe waktunyo óntók <span class="nd">ALLAH</span> betindak,</div>
+<div class="q2">soalnyo hókóm Kau la dilanggar.<span id="bookmarks126"></span></div><span id="bookmarks126"></span><a id="v127"></a>
+<div class="q-vv"><span class="v">127</span><span class="vsp">&nbsp;</span>Mangkonyo aku ngaséhi prénto-prénto Kau lebé dari emas,</div>
+<div class="q2">malahan lebé dari emas murni.<span id="bookmarks127"></span></div><span id="bookmarks127"></span><a id="v128"></a>
+<div class="q-vv"><span class="v">128</span><span class="vsp">&nbsp;</span>Trós slóró petónjók Kau aku pandang bener,<span class="footnote selectable" id="F-8"><sup>*</sup></span></div>
+<div class="q2">tapi slóró jalan kesesatan aku benci.</div>
+<div class="b">&nbsp;</div>
+<div class="qa">פ - Pe</div>
+<div class="b">&nbsp;</div><span id="bookmarks128"></span><span id="bookmarks128"></span><a id="v129"></a>
+<div class="q-vv"><span class="v">129</span><span class="vsp">&nbsp;</span>Pejanjian Kau tu ajaéb;</div>
+<div class="q2">karno tu, jiwo aku nórótinyo.<span id="bookmarks129"></span></div><span id="bookmarks129"></span><a id="v130"></a>
+<div class="q-vv"><span class="v">130</span><span class="vsp">&nbsp;</span>Pirman Kau iola lawang tebukak yang ngenjók cahayo,<span class="footnote selectable" id="F-9"><sup>*</sup></span></div>
+<div class="q2">yang ngenjók pengertian samo wong-wong polos.<span id="bookmarks130"></span></div><span id="bookmarks130"></span><a id="v131"></a>
+<div class="q-vv"><span class="v">131</span><span class="vsp">&nbsp;</span>Aku mangapke mólót trós menges-menges</div>
+<div class="q2">dalem kerinduan óntók prénto-prénto Kau.<span id="bookmarks131"></span></div><span id="bookmarks131"></span><a id="v132"></a>
+<div class="q-vv"><span class="v">132</span><span class="vsp">&nbsp;</span>Tolela aku trós mura atila samo aku,</div>
+<div class="q2">pecak yang biaso Kau lakuke samo wong-wong yang ngaséhi namo Kau.<span id="bookmarks132"></span></div><span id="bookmarks132"></span><a id="v133"></a>
+<div class="q-vv"><span class="v">133</span><span class="vsp">&nbsp;</span>Tegókela langka-langka aku sesuai dengen janji Kau,</div>
+<div class="q2">trós jangan biarke segalo kejahatan bekuaso <span class="add">dalem édóp</span> aku.<span id="bookmarks133"></span></div><span id="bookmarks133"></span><a id="v134"></a>
+<div class="q-vv"><span class="v">134</span><span class="vsp">&nbsp;</span>Tebósla aku dari penindesan manusio</div>
+<div class="q2">supayo aku pacak nóróti petónjók-petónjók Kau.<span id="bookmarks134"></span></div><span id="bookmarks134"></span><a id="v135"></a>
+<div class="q-vv"><span class="v">135</span><span class="vsp">&nbsp;</span>Biarla cahayo rai Kau nyinari hamba Kau,</div>
+<div class="q2">trós ajarila aku peratóran-peratóran Kau.<span id="bookmarks135"></span></div><span id="bookmarks135"></span><a id="v136"></a>
+<div class="q-vv"><span class="v">136</span><span class="vsp">&nbsp;</span>Banyu mato aku ngalér pecak sungi</div>
+<div class="q2">karno wong-wong idak nóróti ajaran Kau.</div>
+<div class="b">&nbsp;</div>
+<div class="qa">צ - Tsade</div>
+<div class="b">&nbsp;</div><span id="bookmarks136"></span><span id="bookmarks136"></span><a id="v137"></a>
+<div class="q-vv"><span class="v">137</span><span class="vsp">&nbsp;</span>Ya <span class="nd">ALLAH</span>, Kau adél,</div>
+<div class="q2">trós kepótósan-kepótósan Kau bener.<span id="bookmarks137"></span></div><span id="bookmarks137"></span><a id="v138"></a>
+<div class="q-vv"><span class="v">138</span><span class="vsp">&nbsp;</span>Kau la netepke kebeneran peratóran Kau,</div>
+<div class="q2">yang pacak diandalke nian.<span id="bookmarks138"></span></div><span id="bookmarks138"></span><a id="v139"></a>
+<div class="q-vv"><span class="v">139</span><span class="vsp">&nbsp;</span>Aku diabéske ole kemarahan aku</div>
+<div class="q2">karno mósó-mósó aku ngelupoke pirman Kau.<span id="bookmarks139"></span></div><span id="bookmarks139"></span><a id="v140"></a>
+<div class="q-vv"><span class="v">140</span><span class="vsp">&nbsp;</span>Janji Kau teuji nian,</div>
+<div class="q2">trós hamba Kau ni ngaséhinyo.<span id="bookmarks140"></span></div><span id="bookmarks140"></span><a id="v141"></a>
+<div class="q-vv"><span class="v">141</span><span class="vsp">&nbsp;</span>Aku ni wong kecik jugo hino,</div>
+<div class="q2">tapi aku idak ngelupoke petónjók-petónjók Kau.<span id="bookmarks141"></span></div><span id="bookmarks141"></span><a id="v142"></a>
+<div class="q-vv"><span class="v">142</span><span class="vsp">&nbsp;</span>Kebeneran Kau iola kebeneran yang sampe selamo-lamonyo,</div>
+<div class="q2">trós ajaran Kau pacak dipecayo.<span id="bookmarks142"></span></div><span id="bookmarks142"></span><a id="v143"></a>
+<div class="q-vv"><span class="v">143</span><span class="vsp">&nbsp;</span>Kesesekan jugo kesaroan la nimpo aku,</div>
+<div class="q2">tapi prénto-prénto Kau iola kesenengan aku.<span id="bookmarks143"></span></div><span id="bookmarks143"></span><a id="v144"></a>
+<div class="q-vv"><span class="v">144</span><span class="vsp">&nbsp;</span>Peratóran Kau bener óntók selamo-lamonyo,</div>
+<div class="q2">enjókla aku pengertian supayo aku pacak édóp.</div>
+<div class="b">&nbsp;</div>
+<div class="qa">ק - Kof</div>
+<div class="b">&nbsp;</div><span id="bookmarks144"></span><span id="bookmarks144"></span><a id="v145"></a>
+<div class="q-vv"><span class="v">145</span><span class="vsp">&nbsp;</span>Aku bejerét dengen sepenu ati; jawabla aku, ya <span class="nd">ALLAH</span>!</div>
+<div class="q2">Aku bakal nóróti peratóran-peratóran Kau.<span id="bookmarks145"></span></div><span id="bookmarks145"></span><a id="v146"></a>
+<div class="q-vv"><span class="v">146</span><span class="vsp">&nbsp;</span>Aku bejerét samo Kau; selametkela aku!</div>
+<div class="q2">Trós aku bakal megang tegó pesyaratan-pesyaratan Kau.<span id="bookmarks146"></span></div><span id="bookmarks146"></span><a id="v147"></a>
+<div class="q-vv"><span class="v">147</span><span class="vsp">&nbsp;</span>Aku bangón pagi-pagi buto trós bejerét mintak tolong,</div>
+<div class="q2">aku narok arepan aku samo pirman Kau.<span id="bookmarks147"></span></div><span id="bookmarks147"></span><a id="v148"></a>
+<div class="q-vv"><span class="v">148</span><span class="vsp">&nbsp;</span>Aku mbukak mato sebelóm waktu jago malem,</div>
+<div class="q2">supayo aku pacak ngerenóngke janji Kau.<span id="bookmarks148"></span></div><span id="bookmarks148"></span><a id="v149"></a>
+<div class="q-vv"><span class="v">149</span><span class="vsp">&nbsp;</span>Ya <span class="nd">ALLAH</span>, dengerkela suaro aku sesuai dengen kasé stio Kau!</div>
+<div class="q2">Enjókla aku édóp sesuai dengen keadélan Kau.<span id="bookmarks149"></span></div><span id="bookmarks149"></span><a id="v150"></a>
+<div class="q-vv"><span class="v">150</span><span class="vsp">&nbsp;</span>Wong-wong yang ngejer aku dengen niat jahat la parak;</div>
+<div class="q2">dio wong jaó dari hókóm Kau.<span id="bookmarks150"></span></div><span id="bookmarks150"></span><a id="v151"></a>
+<div class="q-vv"><span class="v">151</span><span class="vsp">&nbsp;</span>Tapi Kau parak, ya <span class="nd">ALLAH</span>,</div>
+<div class="q2">trós slóró prénto Kau tu pacak dipecayo.<span id="bookmarks151"></span></div><span id="bookmarks151"></span><a id="v152"></a>
+<div class="q-vv"><span class="v">152</span><span class="vsp">&nbsp;</span>Sejak dulu aku tau dari pejanjian Kau,</div>
+<div class="q2">amen Kau la netepke pejanjian tu óntók selamo-lamonyo.</div>
+<div class="b">&nbsp;</div>
+<div class="qa">ר - Res</div>
+<div class="b">&nbsp;</div><span id="bookmarks152"></span><span id="bookmarks152"></span><a id="v153"></a>
+<div class="q-vv"><span class="v">153</span><span class="vsp">&nbsp;</span>Jingokla kesaroan aku trós lepaskela aku,</div>
+<div class="q2">soalnyo aku idak ngelupoke ajaran Kau.<span id="bookmarks153"></span></div><span id="bookmarks153"></span><a id="v154"></a>
+<div class="q-vv"><span class="v">154</span><span class="vsp">&nbsp;</span>Bela-la pekaro aku trós tebósla aku;</div>
+<div class="q2">enjókla aku édóp sesuai dengen janji Kau.<span id="bookmarks154"></span></div><span id="bookmarks154"></span><a id="v155"></a>
+<div class="q-vv"><span class="v">155</span><span class="vsp">&nbsp;</span>Keselametan tu jaó dari wong-wong jahat</div>
+<div class="q2">karno dio wong idak melok'i peratóran-peratóran Kau.<span id="bookmarks155"></span></div><span id="bookmarks155"></span><a id="v156"></a>
+<div class="q-vv"><span class="v">156</span><span class="vsp">&nbsp;</span>Besak belas kesian Kau, ya <span class="nd">ALLAH</span>!</div>
+<div class="q2">Enjókla aku édóp sesuai dengen kepótósan-kepótósan Kau.<span id="bookmarks156"></span></div><span id="bookmarks156"></span><a id="v157"></a>
+<div class="q-vv"><span class="v">157</span><span class="vsp">&nbsp;</span>Banyak yang ngejeri aku jugo mósói aku,</div>
+<div class="q2">tapi aku idak nyimpang dari pesyaratan-pesyaratan Kau.<span id="bookmarks157"></span></div><span id="bookmarks157"></span><a id="v158"></a>
+<div class="q-vv"><span class="v">158</span><span class="vsp">&nbsp;</span>Aku nyingok wong-wong yang behianat, trós aku ngeraso muak,</div>
+<div class="q2">karno dio wong idak nóróti omongan Kau<span class="footnote selectable" id="F-10"><sup>*</sup></span>.<span id="bookmarks158"></span></div><span id="bookmarks158"></span><a id="v159"></a>
+<div class="q-vv"><span class="v">159</span><span class="vsp">&nbsp;</span>Jingokla! Aku ngaséhi petónjók-petónjók Kau, ya <span class="nd">ALLAH</span>!</div>
+<div class="q2">Enjókla aku édóp sesuai dengen kasé stio Kau.<span id="bookmarks159"></span></div><span id="bookmarks159"></span><a id="v160"></a>
+<div class="q-vv"><span class="v">160</span><span class="vsp">&nbsp;</span>Kebeneran iola dasar pirman Kau,</div>
+<div class="q2">trós slóró kepótósan Kau yang adél tu bakal ado óntók selamo-lamonyo.</div>
+<div class="b">&nbsp;</div>
+<div class="qa">ש - Syin</div>
+<div class="b">&nbsp;</div><span id="bookmarks160"></span><span id="bookmarks160"></span><a id="v161"></a>
+<div class="q-vv"><span class="v">161</span><span class="vsp">&nbsp;</span>Wong-wong besak ngejer aku dengen katek alesan,</div>
+<div class="q2">tapi samo pirman Kau bae ati aku tóndók dengen gemeter.<span id="bookmarks161"></span></div><span id="bookmarks161"></span><a id="v162"></a>
+<div class="q-vv"><span class="v">162</span><span class="vsp">&nbsp;</span>Aku seneng karno janji Kau,</div>
+<div class="q2">ibarat wong yang ndapetke banyak rampasan.<span id="bookmarks162"></span></div><span id="bookmarks162"></span><a id="v163"></a>
+<div class="q-vv"><span class="v">163</span><span class="vsp">&nbsp;</span>Aku benci jugo muak samo kesesatan,</div>
+<div class="q2">tapi aku cinto samo ajaran Kau.<span id="bookmarks163"></span></div><span id="bookmarks163"></span><a id="v164"></a>
+<div class="q-vv"><span class="v">164</span><span class="vsp">&nbsp;</span>Tójó kali seari aku muji-muji Kau,</div>
+<div class="q2">karno kepótósan-kepótósan Kau yang adél.<span id="bookmarks164"></span></div><span id="bookmarks164"></span><a id="v165"></a>
+<div class="q-vv"><span class="v">165</span><span class="vsp">&nbsp;</span>Ado damai sentoso yang besak óntók wong-wong yang ngaséhi ajaran Kau.</div>
+<div class="q2">Trós katek sandóngan óntók dio wong.<span id="bookmarks165"></span></div><span id="bookmarks165"></span><a id="v166"></a>
+<div class="q-vv"><span class="v">166</span><span class="vsp">&nbsp;</span>Ya <span class="nd">ALLAH</span>, aku ngarepke keselametan dari Kau,</div>
+<div class="q2">trós aku ngelakuke prénto-prénto Kau.<span id="bookmarks166"></span></div><span id="bookmarks166"></span><a id="v167"></a>
+<div class="q-vv"><span class="v">167</span><span class="vsp">&nbsp;</span>Jiwo aku megang tegó pejanjian Kau,</div>
+<div class="q2">aku ngaséhinyo nian.<span id="bookmarks167"></span></div><span id="bookmarks167"></span><a id="v168"></a>
+<div class="q-vv"><span class="v">168</span><span class="vsp">&nbsp;</span>Aku megang tegó petónjók-petónjók Kau jugo pesyaratan-pesyaratan Kau,</div>
+<div class="q2">karno segalo yang aku lakuke ado di adepan Kau.</div>
+<div class="b">&nbsp;</div>
+<div class="qa">ת - Taw</div>
+<div class="b">&nbsp;</div><span id="bookmarks168"></span><span id="bookmarks168"></span><a id="v169"></a>
+<div class="q-vv"><span class="v">169</span><span class="vsp">&nbsp;</span>Ya <span class="nd">ALLAH</span>, biarla jerétan aku sampe ke adepan Kau,</div>
+<div class="q2">enjókla aku pengertian sesuai dengen pirman Kau.<span id="bookmarks169"></span></div><span id="bookmarks169"></span><a id="v170"></a>
+<div class="q-vv"><span class="v">170</span><span class="vsp">&nbsp;</span>Biarla pintak'an aku sampe ke adepan Kau,</div>
+<div class="q2">trós lepaskela aku sesuai dengen janji Kau.<span id="bookmarks170"></span></div><span id="bookmarks170"></span><a id="v171"></a>
+<div class="q-vv"><span class="v">171</span><span class="vsp">&nbsp;</span>Biarla bébér aku ngucapke puji-pujian,</div>
+<div class="q2">soalnyo Kau ngajarke peratóran-peratóran Kau samo aku.<span id="bookmarks171"></span></div><span id="bookmarks171"></span><a id="v172"></a>
+<div class="q-vv"><span class="v">172</span><span class="vsp">&nbsp;</span>Biarla lida aku benyanyi pasal janji Kau,</div>
+<div class="q2">soalnyo slóró prénto Kau bener.<span id="bookmarks172"></span></div><span id="bookmarks172"></span><a id="v173"></a>
+<div class="q-vv"><span class="v">173</span><span class="vsp">&nbsp;</span>Biarla tangan Kau jadi penolong aku,</div>
+<div class="q2">soalnyo aku la mélé <span class="add">óntók megang</span> petónjók-petónjók Kau.<span id="bookmarks173"></span></div><span id="bookmarks173"></span><a id="v174"></a>
+<div class="q-vv"><span class="v">174</span><span class="vsp">&nbsp;</span>Aku ngerinduke keselametan dari Kau, ya <span class="nd">ALLAH</span>,</div>
+<div class="q2">trós ajaran Kau iola kesenengan aku.<span id="bookmarks174"></span></div><span id="bookmarks174"></span><a id="v175"></a>
+<div class="q-vv"><span class="v">175</span><span class="vsp">&nbsp;</span>Biarla jiwo aku édóp, supayo pacak muji Kau,</div>
+<div class="q2">trós biarla kepótósan-kepótósan Kau nolong aku.<span id="bookmarks175"></span></div><span id="bookmarks175"></span><a id="v176"></a>
+<div class="q-vv"><span class="v">176</span><span class="vsp">&nbsp;</span>Aku la tesesat pecak domba yang ilang.</div>
+<div class="q2">Carila hamba Kau ni,</div>
+<div class="q2">soalnyo aku idak ngelupoke prénto-prénto Kau.<span id="bookmarks176"></span></div>
+</div>
+<script type='text/javascript' src='./pwa-main.js'></script>
+<script>
+var coll = document.getElementsByClassName("collapsible-button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+</script>
+</body>
+</html>
