@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+
+<meta property="og:title" content="Taurat Zabór Énjel Baso Plembang">
+<meta property="og:description" content="Kitab Suci Taurat Zabór Énjél dalem baso Plembang">
+<link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+
+<meta property="og:title" content="Taurat Zabór Énjel Baso Plembang">
+<meta property="og:description" content="Kitab Suci Taurat Zabór Énjél dalem baso Plembang">
+<link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
+
+<meta property="og:title" content="Taurat Zabór Énjel Baso Plembang">
+<meta property="og:description" content="Kitab Suci Taurat Zabór Énjél dalem baso Plembang">
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+<meta property="og:title" content="Alkitab Tejemahan Palembang">
+<meta property="og:description" content="Terjemahan Alkitab dalem baso Palembang.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#006600">
+<title>Zabór 48</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">42:1 </span><span class=\"fq\">bani Korah: </span><span class=\"ft\">Di </span><span class=\"xt\">2 Riwayat 20:19</span><span class=\"ft\">, ado kelompok wong yang disebót “bani Korah” yang nyanyike nyanyian pujian di <span class=\"footnote selectable\" id=\"G-50\">Ruma Agóng Allah</span>. Pecaknyo dio wong yang nólés </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-02-PSA-042.html\">Zabór 42</a></span>–<span class=\"reflink\"><a href=\"Aktb-02-PSA-045.html\">45</a></span>; <span class=\"reflink\"><a href=\"Aktb-02-PSA-047.html\">47</a></span>–<span class=\"reflink\"><a href=\"Aktb-02-PSA-049.html\">49</a></span>; <span class=\"reflink\"><a href=\"Aktb-02-PSA-085.html\">85</a></span>; <span class=\"reflink\"><a href=\"Aktb-02-PSA-087.html\">87</a></span></span><span class=\"ft\"> ; samo </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-02-PSA-088.html\">88</a></span>.</span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"fr\">48:3 </span><span class=\"fq\">di ójóng sebela utara: </span><span class=\"ft\">Kato baso Ibrani óntók ‘utara’ di sini iola <span class=\"it\">zafon</span>, yang jugo namo dari gónóng di utara Israel. Dalem agama wong Kanaan, Gónóng Zafon tu iola gónóng suci tempat tinggal dewo-dewo dio wong. Mangkonyo, ado jugo ahli kitab suci yang napsérke kato <span class=\"it\">utara</span> di sini ngacu ke Gónóng Zafon tu, yang jadi caro penyaér óntók ngatoke amen Bókét Sion tu iola gónóng suci yang sebenernyo. Bókét Sion dewek ado di ójóng utara Propinsi Yuda, yang ado di bagéan selatan Negara Israel.</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">48:5-6 </span><span class=\"fq\">Rajo-rajo bekómpól.… trós lari ketakótan: </span><span class=\"ft\">Di sini rajo-rajo mósó Israel dateng óntók nyerbu Kota Sion (iola Yerusalem, ibu kota Israel pas jaman tu). Tapi pas dio wong nyingok Allah ngeléndóngi kota tu, dio wong lari ketakótan.</span></div>",
+    "F-3": "<div class=\"footnote-p\"><span class=\"fr\">48:8 </span><span class=\"fq\">Tarsis: </span><span class=\"ft\">Sikok kota di Laót Tenga yang tekenal pas jaman tu karno kapal-kapalnyo yang besak. Letak kota tu jaó dari Israel, tapi kapalnyo dikenal di mano-mano karno pedagangan.</span></div>",
+    "F-4": "<div class=\"footnote-p\"><span class=\"fr\">48:12 </span><span class=\"fq\">dósón-dósón Yuda: </span><span class=\"ft\">Tólésan aslinyo iola “anak-anak (betino) Yuda”. “Anak betino” di sini jadi gambaran dósón yang pecak anak dari Propinsi/Kerajaan Yuda. Dalem sejara bangso Israel, Yuda ni awalnyo jadi propinsi paléng penténg di Israel. Seabés Israel tebagé duo, Yuda jadi Kerajaan Selatan Israel. Kota Yerusalem/Sion iola ibu kota Yuda.</span></div>",
+    "F-5": "<div class=\"footnote-p\"><span class=\"fr\">48:12 </span><span class=\"fq\">besorak-sorak karno kepótósan pengadélan Kau: </span><span class=\"ft\">Dio wong besorak-sorak karno Allah ngakémi mósó-mósó dio wong.</span></div>",
+    "F-6": "<div class=\"footnote-p\"><span class=\"fr\">48:15 </span><span class=\"fq\">sampe selesai: </span><span class=\"ft\">Makno kato asli dalem baso Ibrani di sini dak pulok jelas.</span></div>"
+};
+
+initFootnotes(footnotes);
+
+
+// Glossary entries
+var glossary = {
+    "G-2": "<div><span class=\"k\">ALLAH</span> - Setiap kali tejingok kato ni (óróp besak galo), artinyo yang tetólés di teks aslinyo bukan kato Allah, tapi namo YHWH. Mangko, kato ALLAH yang ditólés makek óróp besak galo idak samo dengen kato Allah yang ditólés makek óróp besak di awal bae. YHWH tu iola namonyo Allah yang diwahyuke-Nyo ke Nabi Musa di Gónóng Horeb (Pembebasan 3:15). Namo YHWH tu móngkén diucapke “Yahwe” trós artinyo ‘Yang Kekal’. Tapi ado tradisi lamo yang dak nyebótke namo YHWH soalnyo takót dianggep ngotori namo tu. Jadi banyak wong makek kato pengganti, contonyo <span class=\"it\">Allah</span> apo <span class=\"it\">Tuhan</span>.</div>",
+    "G-56": "<div><span class=\"k\">Sion</span> - Sion ni nónjókke tempat hadérat Allah di bumi, iola Kota Yerusalem jugo <span class=\"footnote selectable\" id=\"G-50\">Ruma Agóng Allah</span> yang ado di dalemnyo. Karno Yerusalem ado di pócók bókét, seréng disebót Bókét Sion.</div>",
+    "G-54": "<div><span class=\"k\">selah</span> - Ini ni kato baso Ibrani, yang iola baso asli kitab ni. Makno kato ni dak pulok jelas. Kemóngkénan <span class=\"it\">selah </span> tu digunoke jadi petónjók musik.</div>",
+    "G-50": "<div><span class=\"k\">Ruma Agóng Allah</span> - Ini ni bukan ruma ibada biaso, malahan sikok-sikoknyo tempat di dunio di mano hadérat Allah tinggal pas jaman tu. Tempatnyo ado di Kota <span class=\"footnote selectable\" id=\"G-63\">Yerusalem</span>, trós wong Israel nyemba Allah di tempat tu. Kegiatan yang seréng dilakuke di Ruma tu iola nyembake pesembahan kórban sembeléhan, pembakaran garu ole imam, pesembahan dóét, pesembahan-pesembahan laén, jugo doa.</div><div class=\"p\">Mak ini ari, Ruma tu dak katek lagi karno la diancórke ole tentra Roma pas taón 70 M. Tapi, Pas jaman Ruma Agóng Allah masé ado, Ruma tu iola pusat budayo jugo agama slóró wong Israel, mugola amen dio wong tinggal jaó nian dari tempat tu. Pas jaman Nabi Musa sampe jaman Rajo Daód, Ruma Agóng Allah bebentók kemah karno belóm ado bangónannyo. Jingokla jugo “<span class=\"footnote selectable\" id=\"G-28\">Kemah Petemuan</span>”.</div>"
+};
+
+initFootnotes(glossary);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 2 }, { start: 8, end: 8 }, { start: 15, end: 16 }, { start: 19, end: 19 }, { start: 22, end: 24 }, { start: 34, end: 34 }, { start: 36, end: 37 }, { start: 40, end: 40 }, { start: 42, end: 43 }, { start: 48, end: 51 }, { start: 70, end: 70 }, { start: 84, end: 84 }, { start: 87, end: 87 }, { start: 96, end: 96 }, { start: 98, end: 98 }, { start: 108, end: 108 }, { start: 104, end: 104 }, { start: 110, end: 110 }, { start: 112, end: 112 }, { start: 119, end: 119 }, { start: 132, end: 132 }, { start: 137, end: 137 }, { start: 143, end: 143 }, { start: 148, end: 148 }];
+var hasIntro = false;
+var baseRef  = "Aktb-02-PSA-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='Aktb-01-GEN-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-02-PSA-043.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Zabór&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;48&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-02-PSA-049.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-03-GLO-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="c">48</div> 
+<div class="s2"><div id="s1">Sion, kota Allah</div></div><a id="v1"></a>
+<div class="qc-v top-spacing"><span class="v">1</span><span class="vsp">&nbsp;</span>Nyanyian. Saér nyanyian bani Korah.<span class="footnote selectable" id="F-0"><sup>a</sup></span></div>
+<div class="b">&nbsp;</div><span id="bookmarks1"></span><span id="bookmarks1"></span><a id="v2"></a>
+<div class="q-v"><span class="v">2</span><span class="vsp">&nbsp;</span>Besakla <span class="nd"><span class="footnote selectable" id="G-2">ALLAH</span></span> jugo tepuji nian</div>
+<div class="q2">di kota Tuhan kito, bókét-Nyo yang suci.<span id="bookmarks2"></span></div><span id="bookmarks2"></span><a id="v3"></a>
+<div class="q-v"><span class="v">3</span><span class="vsp">&nbsp;</span>Cindó menjulang, kesenengan óntók slóró bumi,</div>
+<div class="q2">itula bókét <span class="footnote selectable" id="G-56">Sion</span>, yang iola kota Rajo Besak,</div>
+<div class="q2">yang ado di ójóng sebela utara!<span class="footnote selectable" id="F-1"><sup>b</sup></span><span id="bookmarks3"></span></div><span id="bookmarks3"></span><a id="v4"></a>
+<div class="q-v"><span class="v">4</span><span class="vsp">&nbsp;</span>Allah ado di jeró benteng-bentengnyo.</div>
+<div class="q2">Dio la ngenalke diri jadi tempat peléndóngan yang tinggi.</div>
+<div class="b">&nbsp;</div><span id="bookmarks4"></span><span id="bookmarks4"></span><a id="v5"></a>
+<div class="q-v"><span class="v">5</span><span class="vsp">&nbsp;</span>Soalnyo jingokla! Rajo-rajo bekómpól.</div>
+<div class="q2">Dio wong serempak nyerbu.<span id="bookmarks5"></span></div><span id="bookmarks5"></span><a id="v6"></a>
+<div class="q-v"><span class="v">6</span><span class="vsp">&nbsp;</span>Dio wong jingok, abés tu tepelongok.</div>
+<div class="q2">Dio wong panik,</div>
+<div class="q3">trós lari ketakótan.<span class="footnote selectable" id="F-2"><sup>c</sup></span><span id="bookmarks6"></span></div><span id="bookmarks6"></span><a id="v7"></a>
+<div class="q-v"><span class="v">7</span><span class="vsp">&nbsp;</span>Dio wong gemeter ketakótan di sano,</div>
+<div class="q2">trós kesakétan nian pecak betino yang nak beranak.<span id="bookmarks7"></span></div><span id="bookmarks7"></span><a id="v8"></a>
+<div class="q-v"><span class="v">8</span><span class="vsp">&nbsp;</span>Dengen angin timur</div>
+<div class="q2">Kau ngancórke kapal-kapal Tarsis.<span class="footnote selectable" id="F-3"><sup>d</sup></span></div>
+<div class="b">&nbsp;</div><span id="bookmarks8"></span><span id="bookmarks8"></span><a id="v9"></a>
+<div class="q-v"><span class="v">9</span><span class="vsp">&nbsp;</span>Pecak yang dulu kito denger, sekarang kito la nyingok,</div>
+<div class="q2">di kota <span class="nd">ALLAH</span>, Tuan Semesto Alam,</div>
+<div class="q2">di kota Tuhan kito.</div>
+<div class="q">Allah negóke kota tu óntók selamo-lamonyo. <span class="qs"><span class="footnote selectable" id="G-54">Selah</span></span></div>
+<div class="b">&nbsp;</div><span id="bookmarks9"></span><span id="bookmarks9"></span><a id="v10"></a>
+<div class="q-vv"><span class="v">10</span><span class="vsp">&nbsp;</span>Ya Allah, kami nginget kasé stio Kau</div>
+<div class="q2">di jeró <span class="footnote selectable" id="G-50">Ruma Agóng Kau</span>.<span id="bookmarks10"></span></div><span id="bookmarks10"></span><a id="v11"></a>
+<div class="q-vv"><span class="v">11</span><span class="vsp">&nbsp;</span>Samo pecak namo baék Kau, ya Allah,</div>
+<div class="q2">cak itu jugo puji-pujian óntók Kau sampe ke ójóng-ójóng bumi.</div>
+<div class="q">Tangan kanan Kau penu keadélan.<span id="bookmarks11"></span></div><span id="bookmarks11"></span><a id="v12"></a>
+<div class="q-vv"><span class="v">12</span><span class="vsp">&nbsp;</span>Biarkela Bókét Sion beseneng;</div>
+<div class="q2">biarkela dósón-dósón Yuda<span class="footnote selectable" id="F-4"><sup>e</sup></span> besorak-sorak</div>
+<div class="q2">karno kepótósan pengadélan Kau.<span class="footnote selectable" id="F-5"><sup>f</sup></span></div>
+<div class="b">&nbsp;</div><span id="bookmarks12"></span><span id="bookmarks12"></span><a id="v13"></a>
+<div class="q-vv"><span class="v">13</span><span class="vsp">&nbsp;</span>Payó! Bejalanla muteri Sion, trós keléléngila dio.</div>
+<div class="q2">Étóngla menara-menaranyo.<span id="bookmarks13"></span></div><span id="bookmarks13"></span><a id="v14"></a>
+<div class="q-vv"><span class="v">14</span><span class="vsp">&nbsp;</span>Pasatila tembok-temboknyo,</div>
+<div class="q2">liwatla di antaro benteng-bentengnyo,</div>
+<div class="q2">supayo kamu pacak nyeritokenyo samo angkatan berékótnyo.<span id="bookmarks14"></span></div><span id="bookmarks14"></span><a id="v15"></a>
+<div class="q-vv"><span class="v">15</span><span class="vsp">&nbsp;</span>Sebenernyo, inila Allah,</div>
+<div class="q2">Tuhan kito óntók seterósnyo jugo selamo-lamonyo!</div>
+<div class="q2">Diola yang bakal mémpén kito sampe selesai!<span class="footnote selectable" id="F-6"><sup>g</sup></span><span id="bookmarks15"></span></div>
+</div>
+<script type='text/javascript' src='./pwa-main.js'></script>
+<script>
+var coll = document.getElementsByClassName("collapsible-button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+</script>
+</body>
+</html>
