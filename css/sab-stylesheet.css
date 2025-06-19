@@ -209,6 +209,16 @@ div.cl {
     margin-top: 0.5em;
 }
 
+
+/* TODO try using a before/after with split wrapper 
+Bingkai LB_1080x1920.svg
+Bingkai_LB_1080x1350.svg
+frame_lama.svg
+frame_yellow.svg
+frame.svg
+verse_wrap.svg
+
+*/
 span.v {
     color: #005300;
     font-size: 70%;
@@ -216,9 +226,36 @@ span.v {
     bottom: 0.3em;
     line-height: normal;
     background-color: transparent;
-    padding:1em;
+    padding:0.125em;
+/*
+    border: 4px solid transparent;
+    border-image: url('verse_wrap.svg') 4 stretch;
+    margin: 0 0.25em; */
 }
 
+
+span.v:before {
+    content:'';
+    background-image: url("left_wrapper.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 1.5em;
+    display:inline-block;
+    vertical-align: -0.4em;
+}
+
+
+span.v:after{
+    content:'';
+    background-image: url("right_wrapper.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 1.5em;
+    display:inline-block;
+    vertical-align: -0.4em;
+}
 
 span.vsp {
     font-size: 50%;
