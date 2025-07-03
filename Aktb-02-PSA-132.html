@@ -32,20 +32,20 @@ $(document).ready(function() {
 
 // Footnotes and Cross-references
 var footnotes = {
-    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">132:1 </span><span class=\"fq\">Daód dengen slóró susa payanyo: </span><span class=\"ft\">Rajo Daódla yang awalnyo gawak <span class=\"footnote selectable\" id=\"G-2\">peti pejanjian</span> ke Kota Yerusalem, trós ngelakuke segalo pesiapan óntók <span class=\"footnote selectable\" id=\"G-4\">Ruma Agóng Allah</span> yang bakal dibangón di situ. Cerito ni pacak dibaco di </span><span class=\"xt\">1 Riwayat 13; 14–17; 22–26</span><span class=\"ft\">.</span></div>",
-    "F-1": "<div class=\"footnote-p\"><span class=\"fr\">132:6 </span><span class=\"fq\">Eprata: </span><span class=\"ft\">Ini ni namo laén óntók Kota Betlehem, kampóngnyo Rajo Daód.</span></div>",
-    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">132:6 </span><span class=\"fq\">padang Yaar: </span><span class=\"ft\">Ini ni namo laén óntók Kiryat-Yearim yang iola sikok dósón yang tempatnyo kiro-kiro 14 km di ara barat laót Kota Yerusalem. Kiryat-Yearim iola tempat sementaro óntók <span class=\"footnote selectable\" id=\"G-2\">peti pejanjian</span> Allah selamo 20 taón sebelóm digawak Rajo Daód ke Yerusalem (jingok </span><span class=\"xt\">1 Samuel 6:21–7:2; 1 Riwayat 13:1-8</span><span class=\"ft\">).</span></div>",
-    "F-3": "<div class=\"footnote-p\"><span class=\"fr\">132:7 </span><span class=\"fq\">bangku alas sekel-Nyo: </span><span class=\"ft\">Pecaknyo yang dimaksód di sini iola <span class=\"footnote selectable\" id=\"G-2\">peti pejanjian</span>.</span></div>",
-    "F-4": "<div class=\"footnote-p\"><span class=\"fr\">132:8 </span><span class=\"fq\">berangkatla ke tempat Kau bakal netep: </span><span class=\"ft\">Di jaman tu, hadérat Allah nyertoi peti pejanjian. Di ayat ni, Rajo Daód gawak peti pejanjian tu dari padang Yaar ke kemah yang dio siapke di Yerusalem supayo hadérat Allah pacak netep di sano (jingok </span><span class=\"xt\">1 Riwayat 15:1,3; 16:1</span><span class=\"ft\">).</span></div>",
-    "F-5": "<div class=\"footnote-p\"><span class=\"fr\">132:12 </span><span class=\"fq\">pejanjian Aku: </span><span class=\"ft\">Ini ni nónjók ke pejanjian Allah dengen bangso Israel di Gónóng Sinai (jingok </span><span class=\"xt\">Pembebasan 19–24</span><span class=\"ft\">).</span></div>",
-    "F-6": "<div class=\"footnote-p\"><span class=\"fr\">132:17 </span><span class=\"fq\">tandók kekuasoan … pelito kerajaan: </span><span class=\"ft\">Di sini, Allah bejanji bakal negakke sikok dinasti yang bekuaso óntók Rajo Daód. <span class=\"it\">Tandók</span> iola peumpamoan óntók ketórónan Rajo Daód yang bakal bekuaso, trós <span class=\"it\">pelito</span> iola peumpamoan óntók tahto Rajo Daód yang bakal diteróske tórón-temórón sampe selamo-lamonyo (jingok </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-02-PSA-001.html\">1</a></span> Rajo-Rajo 11:36; 15:4; 2 Rajo-Rajo 8:19; 2 Samuel 21:17; 2 Riwayat 21:9</span><span class=\"ft\">).</span></div>"
+"F-0": "<div class=\"footnote-p\"><span class=\"fr\">132:1 </span><span class=\"fq\">Daód dengen slóró susa payanyo: </span><span class=\"ft\">Rajo Daódla yang awalnyo gawak <span class=\"footnote selectable\" id=\"G-2\">peti pejanjian</span> ke Kota Yerusalem, trós ngelakuke segalo pesiapan óntók <span class=\"footnote selectable\" id=\"G-4\">Ruma Agóng Allah</span> yang bakal dibangón di situ. Cerito ni pacak dibaco di </span><span class=\"xt\">1 Riwayat 13; 14–17; 22–26</span><span class=\"ft\">.</span></div>",
+"F-1": "<div class=\"footnote-p\"><span class=\"fr\">132:6 </span><span class=\"fq\">Eprata: </span><span class=\"ft\">Ini ni namo laén óntók Kota Betlehem, kampóngnyo Rajo Daód.</span></div>",
+"F-2": "<div class=\"footnote-p\"><span class=\"fr\">132:6 </span><span class=\"fq\">padang Yaar: </span><span class=\"ft\">Ini ni namo laén óntók Kiryat-Yearim yang iola sikok dósón yang tempatnyo kiro-kiro 14 km di ara barat laót Kota Yerusalem. Kiryat-Yearim iola tempat sementaro óntók <span class=\"footnote selectable\" id=\"G-2\">peti pejanjian</span> Allah selamo 20 taón sebelóm digawak Rajo Daód ke Yerusalem (jingok </span><span class=\"xt\">1 Samuel 6:21–7:2; 1 Riwayat 13:1-8</span><span class=\"ft\">).</span></div>",
+"F-3": "<div class=\"footnote-p\"><span class=\"fr\">132:7 </span><span class=\"fq\">bangku alas sekel-Nyo: </span><span class=\"ft\">Pecaknyo yang dimaksód di sini iola <span class=\"footnote selectable\" id=\"G-2\">peti pejanjian</span>.</span></div>",
+"F-4": "<div class=\"footnote-p\"><span class=\"fr\">132:8 </span><span class=\"fq\">berangkatla ke tempat Kau bakal netep: </span><span class=\"ft\">Di jaman tu, hadérat Allah nyertoi peti pejanjian. Di ayat ni, Rajo Daód gawak peti pejanjian tu dari padang Yaar ke kemah yang dio siapke di Yerusalem supayo hadérat Allah pacak netep di sano (jingok </span><span class=\"xt\">1 Riwayat 15:1,3; 16:1</span><span class=\"ft\">).</span></div>",
+"F-5": "<div class=\"footnote-p\"><span class=\"fr\">132:12 </span><span class=\"fq\">pejanjian Aku: </span><span class=\"ft\">Ini ni nónjók ke pejanjian Allah dengen bangso Israel di Gónóng Sinai (jingok </span><span class=\"xt\">Pembebasan 19–24</span><span class=\"ft\">).</span></div>",
+"F-6": "<div class=\"footnote-p\"><span class=\"fr\">132:17 </span><span class=\"fq\">tandók kekuasoan … pelito kerajaan: </span><span class=\"ft\">Di sini, Allah bejanji bakal negakke sikok dinasti yang bekuaso óntók Rajo Daód. <span class=\"it\">Tandók</span> iola peumpamoan óntók ketórónan Rajo Daód yang bakal bekuaso, trós <span class=\"it\">pelito</span> iola peumpamoan óntók tahto Rajo Daód yang bakal diteróske tórón-temórón sampe selamo-lamonyo (jingok </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-02-PSA-001.html\">1</a></span> Rajo-Rajo 11:36; 15:4; 2 Rajo-Rajo 8:19; 2 Samuel 21:17; 2 Riwayat 21:9</span><span class=\"ft\">).</span></div>"
 };
 
 initFootnotes(footnotes);
 
 var crossrefs = {
-    "X-0": "<div class=\"footnote-p\"><span class=\"xo\">132:8-10 </span><span class=\"xta\">Doa yang mérép dipakek di</span><span class=\"xt\"> </span><span class=\"xt\">2 Riwayat 6:41-42 </span><span class=\"xta\">pas Ruma Agóng Allah diresmike seabés dibangón Rajo Suleiman, anaknyo Rajo Daód.</span><span class=\"xt\"></span></div>",
-    "X-1": "<div class=\"footnote-p\"><span class=\"xo\">132:11-12 </span><span class=\"xta\">Cerito pasal Allah békén janji ini samo Rajo Daód pacak dibaco di </span><span class=\"xt\">2 Samuel 7:12-16; 1 Riwayat 17:11-14. </span><span class=\"xta\">Janji ni disebótke jugo di </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-02-PSA-089.html#v4\">Zabór 89:4-5</a></span>; Cerito Rosul-Rosul 2:30</span><span class=\"xta\">.</span></div>"
+"X-0": "<div class=\"footnote-p\"><span class=\"xo\">132:8-10 </span><span class=\"xta\">Doa yang mérép dipakek di</span><span class=\"xt\"> </span><span class=\"xt\">2 Riwayat 6:41-42 </span><span class=\"xta\">pas Ruma Agóng Allah diresmike seabés dibangón Rajo Suleiman, anaknyo Rajo Daód.</span><span class=\"xt\"></span></div>",
+"X-1": "<div class=\"footnote-p\"><span class=\"xo\">132:11-12 </span><span class=\"xta\">Cerito pasal Allah békén janji ini samo Rajo Daód pacak dibaco di </span><span class=\"xt\">2 Samuel 7:12-16; 1 Riwayat 17:11-14. </span><span class=\"xta\">Janji ni disebótke jugo di </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-02-PSA-089.html#v4\">Zabór 89:4-5</a></span>; Cerito Rosul-Rosul 2:30</span><span class=\"xta\">.</span></div>"
 };
 
 initFootnotes(crossrefs);
@@ -53,10 +53,10 @@ initFootnotes(crossrefs);
 
 // Glossary entries
 var glossary = {
-    "G-4": "<div><span class=\"k\">Ruma Agóng Allah</span> - Ini ni bukan ruma ibada biaso, malahan sikok-sikoknyo tempat di dunio di mano hadérat Allah tinggal pas jaman tu. Tempatnyo ado di Kota <span class=\"footnote selectable\" id=\"G-7\">Yerusalem</span>, trós wong Israel nyemba Allah di tempat tu. Kegiatan yang seréng dilakuke di Ruma tu iola nyembake pesembahan kórban sembeléhan, pembakaran garu ole imam, pesembahan dóét, pesembahan-pesembahan laén, jugo doa.</div><div class=\"p\">Mak ini ari, Ruma tu dak katek lagi karno la diancórke ole tentra Roma pas taón 70 M. Tapi, Pas jaman Ruma Agóng Allah masé ado, Ruma tu iola pusat budayo jugo agama slóró wong Israel, mugola amen dio wong tinggal jaó nian dari tempat tu. Pas jaman Nabi Musa sampe jaman Rajo Daód, Ruma Agóng Allah bebentók kemah karno belóm ado bangónannyo. Jingokla jugo “Kemah Petemuan”.</div>",
-    "G-0": "<div><span class=\"k\">ALLAH</span> - Setiap kali tejingok kato ni (óróp besak galo), artinyo yang tetólés di teks aslinyo bukan kato Allah, tapi namo YHWH. Mangko, kato ALLAH yang ditólés makek óróp besak galo idak samo dengen kato Allah yang ditólés makek óróp besak di awal bae. YHWH tu iola namonyo Allah yang diwahyuke-Nyo ke Nabi Musa di Gónóng Horeb (Pembebasan 3:15). Namo YHWH tu móngkén diucapke “Yahwe” trós artinyo ‘Yang Kekal’. Tapi ado tradisi lamo yang dak nyebótke namo YHWH soalnyo takót dianggep ngotori namo tu. Jadi banyak wong makek kato pengganti, contonyo <span class=\"it\">Allah</span> apo <span class=\"it\">Tuhan</span>.</div>",
-    "G-2": "<div><span class=\"k\">peti pejanjian</span> - Peti ni iola tempat hadérat jugo kuaso Allah di bumi pas jaman dulu. Peti ni disimpen di jeró tempat maha suci di Kemah Petemuan. Pas Kemah Petemuan tu diganti dengen <span class=\"footnote selectable\" id=\"G-4\">Ruma Agóng Allah</span>, mangko peti tu ditarok di situ. Namonyo peti pejanjian karno di jerónyo ado duo kepéng batu betóléske Sepóló Prénto Allah yang dienjókke samo Nabi Musa pas Allah békén pejanjian samo bangso Israel di Gónóng Sinai, yang jugo disebót Gónóng Horeb. (Jingok Pembebasan 25:10). Pecaknyo peti pejanjian ni ilang pas pembuangan bangso Israel ke Babel, kiro-kiro 600 taón sebelóm pelayanan Nabi Isa.</div>",
-    "G-6": "<div><span class=\"k\">Sion</span> - Sion ni nónjókke tempat hadérat Allah di bumi, iola Kota Yerusalem jugo <span class=\"footnote selectable\" id=\"G-4\">Ruma Agóng Allah</span> yang ado di dalemnyo. Karno Yerusalem ado di pócók bókét, seréng disebót Bókét Sion.</div>"
+"G-4": "<div><span class=\"k\">Ruma Agóng Allah</span> - Ini ni bukan ruma ibada biaso, malahan sikok-sikoknyo tempat di dunio di mano hadérat Allah tinggal pas jaman tu. Tempatnyo ado di Kota <span class=\"footnote selectable\" id=\"G-7\">Yerusalem</span>, trós wong Israel nyemba Allah di tempat tu. Kegiatan yang seréng dilakuke di Ruma tu iola nyembake pesembahan kórban sembeléhan, pembakaran garu ole imam, pesembahan dóét, pesembahan-pesembahan laén, jugo doa.</div><div class=\"p\">Mak ini ari, Ruma tu dak katek lagi karno la diancórke ole tentra Roma pas taón 70 M. Tapi, Pas jaman Ruma Agóng Allah masé ado, Ruma tu iola pusat budayo jugo agama slóró wong Israel, mugola amen dio wong tinggal jaó nian dari tempat tu. Pas jaman Nabi Musa sampe jaman Rajo Daód, Ruma Agóng Allah bebentók kemah karno belóm ado bangónannyo. Jingokla jugo “Kemah Petemuan”.</div>",
+"G-0": "<div><span class=\"k\">ALLAH</span> - Setiap kali tejingok kato ni (óróp besak galo), artinyo yang tetólés di teks aslinyo bukan kato Allah, tapi namo YHWH. Mangko, kato ALLAH yang ditólés makek óróp besak galo idak samo dengen kato Allah yang ditólés makek óróp besak di awal bae. YHWH tu iola namonyo Allah yang diwahyuke-Nyo ke Nabi Musa di Gónóng Horeb (Pembebasan 3:15). Namo YHWH tu móngkén diucapke “Yahwe” trós artinyo ‘Yang Kekal’. Tapi ado tradisi lamo yang dak nyebótke namo YHWH soalnyo takót dianggep ngotori namo tu. Jadi banyak wong makek kato pengganti, contonyo <span class=\"it\">Allah</span> apo <span class=\"it\">Tuhan</span>.</div>",
+"G-2": "<div><span class=\"k\">peti pejanjian</span> - Peti ni iola tempat hadérat jugo kuaso Allah di bumi pas jaman dulu. Peti ni disimpen di jeró tempat maha suci di Kemah Petemuan. Pas Kemah Petemuan tu diganti dengen <span class=\"footnote selectable\" id=\"G-4\">Ruma Agóng Allah</span>, mangko peti tu ditarok di situ. Namonyo peti pejanjian karno di jerónyo ado duo kepéng batu betóléske Sepóló Prénto Allah yang dienjókke samo Nabi Musa pas Allah békén pejanjian samo bangso Israel di Gónóng Sinai, yang jugo disebót Gónóng Horeb. (Jingok Pembebasan 25:10). Pecaknyo peti pejanjian ni ilang pas pembuangan bangso Israel ke Babel, kiro-kiro 600 taón sebelóm pelayanan Nabi Isa.</div>",
+"G-6": "<div><span class=\"k\">Sion</span> - Sion ni nónjókke tempat hadérat Allah di bumi, iola Kota Yerusalem jugo <span class=\"footnote selectable\" id=\"G-4\">Ruma Agóng Allah</span> yang ado di dalemnyo. Karno Yerusalem ado di pócók bókét, seréng disebót Bókét Sion.</div>"
 };
 
 initFootnotes(glossary);
@@ -64,7 +64,7 @@ initFootnotes(glossary);
 });
 
 // Chapters
-var chapters = [ { start: 1, end: 2 }, { start: 8, end: 8 }, { start: 15, end: 16 }, { start: 19, end: 19 }, { start: 22, end: 24 }, { start: 34, end: 34 }, { start: 36, end: 37 }, { start: 40, end: 40 }, { start: 42, end: 43 }, { start: 48, end: 51 }, { start: 70, end: 70 }, { start: 84, end: 84 }, { start: 87, end: 87 }, { start: 96, end: 96 }, { start: 98, end: 98 }, { start: 108, end: 108 }, { start: 104, end: 104 }, { start: 110, end: 110 }, { start: 112, end: 112 }, { start: 119, end: 119 }, { start: 132, end: 132 }, { start: 137, end: 137 }, { start: 143, end: 143 }, { start: 148, end: 148 }];
+var chapters = [{start: 1, end: 2}, {start: 8, end: 8}, {start: 15, end: 16}, {start: 19, end: 19}, {start: 22, end: 24}, {start: 34, end: 34}, {start: 36, end: 37}, {start: 40, end: 40}, {start: 42, end: 43}, {start: 48, end: 51}, {start: 70, end: 70}, {start: 84, end: 84}, {start: 87, end: 87}, {start: 96, end: 96}, {start: 98, end: 98}, {start: 104, end: 104}, {start: 108, end: 108}, {start: 110, end: 110}, {start: 112, end: 112}, {start: 119, end: 119}, {start: 132, end: 132}, {start: 137, end: 137}, {start: 143, end: 143}, {start: 148, end: 148}]
 var hasIntro = false;
 var baseRef  = "Aktb-02-PSA-";
 
@@ -79,18 +79,18 @@ var baseRef  = "Aktb-02-PSA-";
 
 <div id="toolbar-top">
 <div class="navigation-top">
-  <span class="button"><a href='Aktb-01-GEN-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
-  <span class="button"><a href='Aktb-02-PSA-119.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
-  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Zabór&nbsp;&nbsp;</a></span>
+<span class="button"><a href='Aktb-01-GEN-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+<span class="button"><a href='Aktb-02-PSA-119.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+<span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Zabór&nbsp;&nbsp;</a></span>
 <span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;132&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='Aktb-02-PSA-137.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='Aktb-03-GLO-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+<span class="button"><a href='Aktb-02-PSA-137.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+<span class="button"><a href='Aktb-03-GLO-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
 </div>
 </div>
 
 <div id="content">
 
-<div class="c">132</div> 
+<div class="c">132</div>
 <div class="s2"><div id="s1">Doa mintak Allah mberkahi rajo Israel karno pejuangan Rajo Daód óntók Ruma Agóng Allah dulu</div></div><a id="v1"></a>
 <div class="qc-v top-spacing"><span class="v">1</span><span class="vsp">&nbsp;</span>Nyanyian <span class="add">wong Israel</span> pas naék nuju ke <span class="footnote selectable" id="G-4">Ruma Agóng Allah</span>.</div>
 <div class="b">&nbsp;</div>
@@ -150,15 +150,15 @@ var coll = document.getElementsByClassName("collapsible-button");
 var i;
 
 for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-            content.style.maxHeight = null;
-        } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-        }
-    });
+coll[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var content = this.nextElementSibling;
+if (content.style.maxHeight){
+content.style.maxHeight = null;
+} else {
+content.style.maxHeight = content.scrollHeight + "px";
+}
+});
 }
 </script>
 </body>

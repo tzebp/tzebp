@@ -32,11 +32,11 @@ $(document).ready(function() {
 
 // Footnotes and Cross-references
 var footnotes = {
-    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">50:1 </span><span class=\"fq\">Asaf: </span><span class=\"ft\">Asaf ni iola sala sikok pemaén musik di <span class=\"footnote selectable\" id=\"G-4\">Ruma Agóng Allah</span> pas jaman Rajo Daód. Ketórónannyo jugo jadi pemaén musik di sano.</span></div>",
-    "F-1": "<div class=\"footnote-p\"><span class=\"fr\">50:5 </span><span class=\"fq\">wong-wong yang ngiket pejanjian dengen Aku: </span><span class=\"ft\">Umat Israel ngiket pejanjian samo Allah di Gónóng Sinai, yang jugo disebót Gónóng Horeb, seabés dio wong digawak Allah metu dari perbudakan di Mesér. Pejanjian Sinai tu ditegóke lagi dari waktu ke waktu. Pecaknyo saér ni dipakek óntók upacara penegóan pejanjian.</span></div>",
-    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">50:14 </span><span class=\"fq\">kórban sókór: </span><span class=\"ft\">Ado banyak macem kórban yang disembake nórót Pejanjian Sinai (jingok catetan sekel di ayat 5). Di antaronyo, ado yang ngapós duso jugo yang nyago kesucian. Kórban-kórban ni wajéb supayo hadérat Allah pacak tinggal di antaro dio wong di <span class=\"footnote selectable\" id=\"G-4\">Ruma Agóng Allah</span>. </span></div><div class=\"footnote-p\"><span class=\"ft\">Tapi sebenernyo tójóan Allah tinggal di situ iola supayo Allah pacak mbangón hóbóngan samo umat-Nyo. Mangko ado jugo pesembahan sukarela pecak kórban óntók mbayar najar jugo kórban óntók ucapan sókór laénnyo. Kórban-kórban ni idak wajéb tapi dilakuke óntók mbangón hóbóngan samo Allah. Amen Israel cuman nyembake kórban yang wajéb, artinyo dio wong ngakui amen hadérat Allah tinggal di antaro dio wong, tapi abés tu Allah diabaike karno dio wong idak galak mbangón hóbóngan samo Dio dengen mintak tolong pas kesaroan trós ngucap sókór pas diberkahi. Ole karno tu, Allah negor dio wong.</span></div>",
-    "F-3": "<div class=\"footnote-p\"><span class=\"fr\">50:14 </span><span class=\"fq\">sembakela kórban sókór ke Allah: </span><span class=\"ft\">Tólésan asli dalem baso Ibrani pacak jugo diartike, “sembakela ucapan sókór ke Allah”.</span></div>",
-    "F-4": "<div class=\"footnote-p\"><span class=\"fr\">50:23 </span><span class=\"fq\">Siapo yang nyembake kórban sókór: </span><span class=\"ft\">Tólésan asli dalem baso Ibrani pacak jugo diartike, “Siapo yang nyembake ucapan sókór”. Jingokla catetan sekel di ayat 14.</span></div>"
+"F-0": "<div class=\"footnote-p\"><span class=\"fr\">50:1 </span><span class=\"fq\">Asaf: </span><span class=\"ft\">Asaf ni iola sala sikok pemaén musik di <span class=\"footnote selectable\" id=\"G-4\">Ruma Agóng Allah</span> pas jaman Rajo Daód. Ketórónannyo jugo jadi pemaén musik di sano.</span></div>",
+"F-1": "<div class=\"footnote-p\"><span class=\"fr\">50:5 </span><span class=\"fq\">wong-wong yang ngiket pejanjian dengen Aku: </span><span class=\"ft\">Umat Israel ngiket pejanjian samo Allah di Gónóng Sinai, yang jugo disebót Gónóng Horeb, seabés dio wong digawak Allah metu dari perbudakan di Mesér. Pejanjian Sinai tu ditegóke lagi dari waktu ke waktu. Pecaknyo saér ni dipakek óntók upacara penegóan pejanjian.</span></div>",
+"F-2": "<div class=\"footnote-p\"><span class=\"fr\">50:14 </span><span class=\"fq\">kórban sókór: </span><span class=\"ft\">Ado banyak macem kórban yang disembake nórót Pejanjian Sinai (jingok catetan sekel di ayat 5). Di antaronyo, ado yang ngapós duso jugo yang nyago kesucian. Kórban-kórban ni wajéb supayo hadérat Allah pacak tinggal di antaro dio wong di <span class=\"footnote selectable\" id=\"G-4\">Ruma Agóng Allah</span>. </span></div><div class=\"footnote-p\"><span class=\"ft\">Tapi sebenernyo tójóan Allah tinggal di situ iola supayo Allah pacak mbangón hóbóngan samo umat-Nyo. Mangko ado jugo pesembahan sukarela pecak kórban óntók mbayar najar jugo kórban óntók ucapan sókór laénnyo. Kórban-kórban ni idak wajéb tapi dilakuke óntók mbangón hóbóngan samo Allah. Amen Israel cuman nyembake kórban yang wajéb, artinyo dio wong ngakui amen hadérat Allah tinggal di antaro dio wong, tapi abés tu Allah diabaike karno dio wong idak galak mbangón hóbóngan samo Dio dengen mintak tolong pas kesaroan trós ngucap sókór pas diberkahi. Ole karno tu, Allah negor dio wong.</span></div>",
+"F-3": "<div class=\"footnote-p\"><span class=\"fr\">50:14 </span><span class=\"fq\">sembakela kórban sókór ke Allah: </span><span class=\"ft\">Tólésan asli dalem baso Ibrani pacak jugo diartike, “sembakela ucapan sókór ke Allah”.</span></div>",
+"F-4": "<div class=\"footnote-p\"><span class=\"fr\">50:23 </span><span class=\"fq\">Siapo yang nyembake kórban sókór: </span><span class=\"ft\">Tólésan asli dalem baso Ibrani pacak jugo diartike, “Siapo yang nyembake ucapan sókór”. Jingokla catetan sekel di ayat 14.</span></div>"
 };
 
 initFootnotes(footnotes);
@@ -44,9 +44,9 @@ initFootnotes(footnotes);
 
 // Glossary entries
 var glossary = {
-    "G-0": "<div><span class=\"k\">ALLAH</span> - Setiap kali tejingok kato ni (óróp besak galo), artinyo yang tetólés di teks aslinyo bukan kato Allah, tapi namo YHWH. Mangko, kato ALLAH yang ditólés makek óróp besak galo idak samo dengen kato Allah yang ditólés makek óróp besak di awal bae. YHWH tu iola namonyo Allah yang diwahyuke-Nyo ke Nabi Musa di Gónóng Horeb (Pembebasan 3:15). Namo YHWH tu móngkén diucapke “Yahwe” trós artinyo ‘Yang Kekal’. Tapi ado tradisi lamo yang dak nyebótke namo YHWH soalnyo takót dianggep ngotori namo tu. Jadi banyak wong makek kato pengganti, contonyo <span class=\"it\">Allah</span> apo <span class=\"it\">Tuhan</span>.</div>",
-    "G-6": "<div><span class=\"k\">Sion</span> - Sion ni nónjókke tempat hadérat Allah di bumi, iola Kota Yerusalem jugo <span class=\"footnote selectable\" id=\"G-4\">Ruma Agóng Allah</span> yang ado di dalemnyo. Karno Yerusalem ado di pócók bókét, seréng disebót Bókét Sion.</div>",
-    "G-5": "<div><span class=\"k\">selah</span> - Ini ni kato baso Ibrani, yang iola baso asli kitab ni. Makno kato ni dak pulok jelas. Kemóngkénan <span class=\"it\">selah </span> tu digunoke jadi petónjók musik.</div>"
+"G-0": "<div><span class=\"k\">ALLAH</span> - Setiap kali tejingok kato ni (óróp besak galo), artinyo yang tetólés di teks aslinyo bukan kato Allah, tapi namo YHWH. Mangko, kato ALLAH yang ditólés makek óróp besak galo idak samo dengen kato Allah yang ditólés makek óróp besak di awal bae. YHWH tu iola namonyo Allah yang diwahyuke-Nyo ke Nabi Musa di Gónóng Horeb (Pembebasan 3:15). Namo YHWH tu móngkén diucapke “Yahwe” trós artinyo ‘Yang Kekal’. Tapi ado tradisi lamo yang dak nyebótke namo YHWH soalnyo takót dianggep ngotori namo tu. Jadi banyak wong makek kato pengganti, contonyo <span class=\"it\">Allah</span> apo <span class=\"it\">Tuhan</span>.</div>",
+"G-6": "<div><span class=\"k\">Sion</span> - Sion ni nónjókke tempat hadérat Allah di bumi, iola Kota Yerusalem jugo <span class=\"footnote selectable\" id=\"G-4\">Ruma Agóng Allah</span> yang ado di dalemnyo. Karno Yerusalem ado di pócók bókét, seréng disebót Bókét Sion.</div>",
+"G-5": "<div><span class=\"k\">selah</span> - Ini ni kato baso Ibrani, yang iola baso asli kitab ni. Makno kato ni dak pulok jelas. Kemóngkénan <span class=\"it\">selah </span> tu digunoke jadi petónjók musik.</div>"
 };
 
 initFootnotes(glossary);
@@ -54,7 +54,7 @@ initFootnotes(glossary);
 });
 
 // Chapters
-var chapters = [ { start: 1, end: 2 }, { start: 8, end: 8 }, { start: 15, end: 16 }, { start: 19, end: 19 }, { start: 22, end: 24 }, { start: 34, end: 34 }, { start: 36, end: 37 }, { start: 40, end: 40 }, { start: 42, end: 43 }, { start: 48, end: 51 }, { start: 70, end: 70 }, { start: 84, end: 84 }, { start: 87, end: 87 }, { start: 96, end: 96 }, { start: 98, end: 98 }, { start: 108, end: 108 }, { start: 104, end: 104 }, { start: 110, end: 110 }, { start: 112, end: 112 }, { start: 119, end: 119 }, { start: 132, end: 132 }, { start: 137, end: 137 }, { start: 143, end: 143 }, { start: 148, end: 148 }];
+var chapters = [{start: 1, end: 2}, {start: 8, end: 8}, {start: 15, end: 16}, {start: 19, end: 19}, {start: 22, end: 24}, {start: 34, end: 34}, {start: 36, end: 37}, {start: 40, end: 40}, {start: 42, end: 43}, {start: 48, end: 51}, {start: 70, end: 70}, {start: 84, end: 84}, {start: 87, end: 87}, {start: 96, end: 96}, {start: 98, end: 98}, {start: 104, end: 104}, {start: 108, end: 108}, {start: 110, end: 110}, {start: 112, end: 112}, {start: 119, end: 119}, {start: 132, end: 132}, {start: 137, end: 137}, {start: 143, end: 143}, {start: 148, end: 148}]
 var hasIntro = false;
 var baseRef  = "Aktb-02-PSA-";
 
@@ -69,18 +69,18 @@ var baseRef  = "Aktb-02-PSA-";
 
 <div id="toolbar-top">
 <div class="navigation-top">
-  <span class="button"><a href='Aktb-01-GEN-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
-  <span class="button"><a href='Aktb-02-PSA-049.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
-  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Zabór&nbsp;&nbsp;</a></span>
+<span class="button"><a href='Aktb-01-GEN-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+<span class="button"><a href='Aktb-02-PSA-049.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+<span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Zabór&nbsp;&nbsp;</a></span>
 <span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;50&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='Aktb-02-PSA-051.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='Aktb-03-GLO-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+<span class="button"><a href='Aktb-02-PSA-051.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+<span class="button"><a href='Aktb-03-GLO-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
 </div>
 </div>
 
 <div id="content">
 
-<div class="c">50</div> 
+<div class="c">50</div>
 <div class="s2"><div id="s1">Ibada yang dipéngéni Allah</div></div><a id="v1"></a>
 <div class="qc-v top-spacing"><span class="v">1</span><span class="vsp">&nbsp;</span>Saér nyanyian Asaf<span class="footnote selectable" id="F-0"><sup>a</sup></span></div>
 <div class="b">&nbsp;</div>
@@ -152,15 +152,15 @@ var coll = document.getElementsByClassName("collapsible-button");
 var i;
 
 for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-            content.style.maxHeight = null;
-        } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-        }
-    });
+coll[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var content = this.nextElementSibling;
+if (content.style.maxHeight){
+content.style.maxHeight = null;
+} else {
+content.style.maxHeight = content.scrollHeight + "px";
+}
+});
 }
 </script>
 </body>

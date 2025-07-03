@@ -32,7 +32,7 @@ $(document).ready(function() {
 
 // Footnotes and Cross-references
 var crossrefs = {
-    "X-0": "<div class=\"footnote-p\"><span class=\"xo\">40:14-18 </span><span class=\"xta\">Tólésan di </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-02-PSA-040.html#v14\">Zabór 40:14-18</a></span></span><span class=\"xta\">ampér samo dengen tólésan di ayat-ayat ni.</span></div>"
+"X-0": "<div class=\"footnote-p\"><span class=\"xo\">40:14-18 </span><span class=\"xta\">Tólésan di </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-02-PSA-040.html#v14\">Zabór 40:14-18</a></span></span><span class=\"xta\">ampér samo dengen tólésan di ayat-ayat ni.</span></div>"
 };
 
 initFootnotes(crossrefs);
@@ -40,7 +40,7 @@ initFootnotes(crossrefs);
 });
 
 // Chapters
-var chapters = [ { start: 1, end: 2 }, { start: 8, end: 8 }, { start: 15, end: 16 }, { start: 19, end: 19 }, { start: 22, end: 24 }, { start: 34, end: 34 }, { start: 36, end: 37 }, { start: 40, end: 40 }, { start: 42, end: 43 }, { start: 48, end: 51 }, { start: 70, end: 70 }, { start: 84, end: 84 }, { start: 87, end: 87 }, { start: 96, end: 96 }, { start: 98, end: 98 }, { start: 108, end: 108 }, { start: 104, end: 104 }, { start: 110, end: 110 }, { start: 112, end: 112 }, { start: 119, end: 119 }, { start: 132, end: 132 }, { start: 137, end: 137 }, { start: 143, end: 143 }, { start: 148, end: 148 }];
+var chapters = [{start: 1, end: 2}, {start: 8, end: 8}, {start: 15, end: 16}, {start: 19, end: 19}, {start: 22, end: 24}, {start: 34, end: 34}, {start: 36, end: 37}, {start: 40, end: 40}, {start: 42, end: 43}, {start: 48, end: 51}, {start: 70, end: 70}, {start: 84, end: 84}, {start: 87, end: 87}, {start: 96, end: 96}, {start: 98, end: 98}, {start: 104, end: 104}, {start: 108, end: 108}, {start: 110, end: 110}, {start: 112, end: 112}, {start: 119, end: 119}, {start: 132, end: 132}, {start: 137, end: 137}, {start: 143, end: 143}, {start: 148, end: 148}]
 var hasIntro = false;
 var baseRef  = "Aktb-02-PSA-";
 
@@ -55,18 +55,18 @@ var baseRef  = "Aktb-02-PSA-";
 
 <div id="toolbar-top">
 <div class="navigation-top">
-  <span class="button"><a href='Aktb-01-GEN-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
-  <span class="button"><a href='Aktb-02-PSA-051.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
-  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Zabór&nbsp;&nbsp;</a></span>
+<span class="button"><a href='Aktb-01-GEN-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+<span class="button"><a href='Aktb-02-PSA-051.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+<span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Zabór&nbsp;&nbsp;</a></span>
 <span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;70&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='Aktb-02-PSA-084.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='Aktb-03-GLO-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+<span class="button"><a href='Aktb-02-PSA-084.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+<span class="button"><a href='Aktb-03-GLO-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
 </div>
 </div>
 
 <div id="content">
 
-<div class="c">70</div> 
+<div class="c">70</div>
 <div class="s2"><div id="s1">Doa ngingetke Allah óntók nolong kito</div></div><a id="v1"></a>
 <div class="qc-v top-spacing"><span class="v">1</span><span class="vsp">&nbsp;</span><span class="add">Catetan</span> óntók pemémpén pujian: <span class="add">Saér nyanyian ni</span> dari Daód. Óntók penginget.</div>
 <div class="b">&nbsp;</div><span id="bookmarks1"></span><span id="bookmarks1"></span><a id="v2"></a>
@@ -94,15 +94,15 @@ var coll = document.getElementsByClassName("collapsible-button");
 var i;
 
 for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-            content.style.maxHeight = null;
-        } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-        }
-    });
+coll[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var content = this.nextElementSibling;
+if (content.style.maxHeight){
+content.style.maxHeight = null;
+} else {
+content.style.maxHeight = content.scrollHeight + "px";
+}
+});
 }
 </script>
 </body>
